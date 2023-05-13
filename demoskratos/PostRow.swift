@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PostCell: View {
+struct PostRow: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
@@ -31,6 +31,6 @@ struct PostCell: View {
 
 struct PostCell_Previews: PreviewProvider {
     static var previews: some View {
-        PostCell()
+        PostRow()
     }
 }
