@@ -11,7 +11,8 @@
 		BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */; };
 		BE9F5C5A29F9C3BD00E57EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */; };
 		BE9F5C5D29F9C3BD00E57EDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F5C5C29F9C3BD00E57EDE /* Preview Assets.xcassets */; };
-		BEC974252A0F1A0B00BFE62C /* PostRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974242A0F1A0B00BFE62C /* PostRow.swift */; };
+		BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974242A0F1A0B00BFE62C /* FeedRow.swift */; };
+		BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974282A0FFA5700BFE62C /* Feed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE9F5C5C29F9C3BD00E57EDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		BEC974242A0F1A0B00BFE62C /* PostRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRow.swift; sourceTree = "<group>"; };
+		BEC974242A0F1A0B00BFE62C /* FeedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
+		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +83,8 @@
 		BEC974272A0FF9A600BFE62C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				BEC974242A0F1A0B00BFE62C /* PostRow.swift */,
+				BEC974282A0FFA5700BFE62C /* Feed.swift */,
+				BEC974242A0F1A0B00BFE62C /* FeedRow.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -157,8 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */,
+				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
-				BEC974252A0F1A0B00BFE62C /* PostRow.swift in Sources */,
+				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

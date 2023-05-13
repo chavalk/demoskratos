@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PostRow: View {
+struct FeedRow: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
@@ -29,8 +29,8 @@ struct PostRow: View {
     }
 }
 
-struct PostRow_Previews: PreviewProvider {
+struct FeedRow_Previews: PreviewProvider {
     static var previews: some View {
-        PostRow()
+        FeedRow()
     }
 }
