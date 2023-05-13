@@ -29,7 +29,7 @@ struct PostRow: View {
     }
 }
 
-struct PostCell_Previews: PreviewProvider {
+struct PostRow_Previews: PreviewProvider {
     static var previews: some View {
         PostRow()
     }
