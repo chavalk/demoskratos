@@ -9,15 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            ScrollView {
-                PostCell()
-                PostCell()
-                PostCell()
-                PostCell()
-            }
-            .navigationTitle("demoskratos")
-            .background(Color(uiColor: UIColor(white: 0.95, alpha: 1)))
+        TabView {
+            Text("Feed")
+                .tabItem {
+                    Label("My Feed", systemImage: "person")
+                }
         }
     }
 }
