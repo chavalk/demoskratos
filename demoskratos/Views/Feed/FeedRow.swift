@@ -26,6 +26,7 @@ struct FeedRow: View {
             
             Divider()
         }
+//        .background(Color.white)
     }
 }
 

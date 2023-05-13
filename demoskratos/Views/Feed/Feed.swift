@@ -16,8 +16,9 @@ struct Feed: View {
                 FeedRow()
                 FeedRow()
             }
-            .navigationTitle("demoskratos")
-            .background(Color(uiColor: UIColor(white: 0.95, alpha: 1)))
+            .navigationTitle("Demoskratos")
+//            .navigationBarTitleDisplayMode(.inline)
+//            .background(Color(uiColor: UIColor(white: 0.95, alpha: 1)))
         }
     }
 }
