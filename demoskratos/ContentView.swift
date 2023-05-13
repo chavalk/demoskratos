@@ -10,8 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            Text("Hello, world!")
-                .navigationTitle("demoskratos")
+            ScrollView {
+                PostCell()
+                PostCell()
+                PostCell()
+                PostCell()
+            }
+            .navigationTitle("demoskratos")
+            .background(Color(uiColor: UIColor(white: 0.95, alpha: 1)))
         }
     }
 }
