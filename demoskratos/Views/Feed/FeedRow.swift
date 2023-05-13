@@ -20,12 +20,16 @@ struct FeedRow: View {
                 VStack(alignment: .leading, spacing: 10) {
                     Text("Diego M. Bernal")
                         .font(.headline)
+                    
                     Text("Your Texas House representative just voted against Senate Bill 14 relating to prohibitions on the provision to certain children of procedures and treatments for gender transitioning, gender reassignment, or gender dysphoria and on the use of public money or public assistance to provide those procedures and treatments.")
+                    
+                    FeedRowButtons()
                 }
             }
             
             Divider()
         }
+        .padding()
 //        .background(Color.white)
     }
 }
