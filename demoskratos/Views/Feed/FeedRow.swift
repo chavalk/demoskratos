@@ -18,10 +18,16 @@ struct FeedRow: View {
                     .frame(width: 56, height: 56)
                 
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Diego M. Bernal")
-                        .font(.headline)
+                    HStack {
+                        Text("Diego M. Bernal")
+                            .font(.headline)
+                        
+                        Text(" • 2d")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
                     
-                    Text("Your Texas House representative just voted against Senate Bill 14 relating to prohibitions on the provision to certain children of procedures and treatments for gender transitioning, gender reassignment, or gender dysphoria and on the use of public money or public assistance to provide those procedures and treatments.")
+                    Text("Your Texas House Representative just voted against Senate Bill 14 relating to prohibitions on the provision to certain children of procedures and treatments for gender transitioning, gender reassignment, or gender dysphoria and on the use of public money or public assistance to provide those procedures and treatments.")
                     
                     FeedRowButtons()
                 }
@@ -29,7 +35,7 @@ struct FeedRow: View {
             
             Divider()
         }
-        .padding()
+        .padding(.horizontal)
 //        .background(Color.white)
     }
 }
