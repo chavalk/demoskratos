@@ -11,11 +11,15 @@ struct FeedRow: View {
     var body: some View {
         VStack {
             HStack(alignment: .top) {
-                Image("texas-house-123")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Circle())
-                    .frame(width: 56, height: 56)
+                NavigationLink {
+                    Text("Profile")
+                } label: {
+                    Image("texas-house-123")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                        .frame(width: 56, height: 56)
+                }
                 
                 VStack(alignment: .leading, spacing: 10) {
                     HStack {
