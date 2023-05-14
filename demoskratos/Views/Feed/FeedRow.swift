@@ -22,7 +22,7 @@ struct FeedRow: View {
                         Text("Diego M. Bernal")
                             .font(.headline)
                         
-                        Text(" • 2d")
+                        Text("• 2 days ago")
                             .font(.subheadline)
                             .foregroundColor(.secondary)
                     }
