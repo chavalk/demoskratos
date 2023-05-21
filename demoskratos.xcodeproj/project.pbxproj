@@ -14,6 +14,7 @@
 		BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974242A0F1A0B00BFE62C /* FeedRow.swift */; };
 		BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974282A0FFA5700BFE62C /* Feed.swift */; };
 		BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */; };
+		BEC9742E2A1AB4A900BFE62C /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC9742D2A1AB4A900BFE62C /* map.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		BEC974242A0F1A0B00BFE62C /* FeedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
 		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowButtons.swift; sourceTree = "<group>"; };
+		BEC9742D2A1AB4A900BFE62C /* map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			children = (
 				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
 				BEC974262A0FF96F00BFE62C /* Views */,
+				BEC9742C2A1AB44500BFE62C /* Resources */,
 				BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */,
 				BE9F5C5B29F9C3BD00E57EDE /* Preview Content */,
 			);
@@ -90,6 +93,14 @@
 				BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		BEC9742C2A1AB44500BFE62C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BEC9742D2A1AB4A900BFE62C /* map.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +163,7 @@
 			files = (
 				BE9F5C5D29F9C3BD00E57EDE /* Preview Assets.xcassets in Resources */,
 				BE9F5C5A29F9C3BD00E57EDE /* Assets.xcassets in Resources */,
+				BEC9742E2A1AB4A900BFE62C /* map.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
