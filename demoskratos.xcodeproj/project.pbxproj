@@ -16,6 +16,7 @@
 		BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */; };
 		BEC9742E2A1AB4A900BFE62C /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC9742D2A1AB4A900BFE62C /* map.json */; };
 		BEC974312A1ADFD800BFE62C /* LoadGeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */; };
+		BEC974342A1AE21500BFE62C /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974332A1AE21500BFE62C /* GeoJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowButtons.swift; sourceTree = "<group>"; };
 		BEC9742D2A1AB4A900BFE62C /* map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
 		BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGeoJSON.swift; sourceTree = "<group>"; };
+		BEC974332A1AE21500BFE62C /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
 				BEC974262A0FF96F00BFE62C /* Views */,
+				BEC974322A1AE1D800BFE62C /* Model */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
 				BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */,
 				BE9F5C5B29F9C3BD00E57EDE /* Preview Content */,
@@ -112,6 +115,14 @@
 				BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BEC974322A1AE1D800BFE62C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEC974332A1AE21500BFE62C /* GeoJSON.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,6 +199,7 @@
 				BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */,
 				BEC974312A1ADFD800BFE62C /* LoadGeoJSON.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
+				BEC974342A1AE21500BFE62C /* GeoJSON.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
 				BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */,
