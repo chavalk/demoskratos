@@ -15,7 +15,6 @@
 		BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974282A0FFA5700BFE62C /* Feed.swift */; };
 		BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */; };
 		BEC9742E2A1AB4A900BFE62C /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC9742D2A1AB4A900BFE62C /* map.json */; };
-		BEC974312A1ADFD800BFE62C /* LoadGeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */; };
 		BEC974342A1AE21500BFE62C /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974332A1AE21500BFE62C /* GeoJSON.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowButtons.swift; sourceTree = "<group>"; };
 		BEC9742D2A1AB4A900BFE62C /* map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
-		BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadGeoJSON.swift; sourceTree = "<group>"; };
 		BEC974332A1AE21500BFE62C /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +110,6 @@
 		BEC9742F2A1ADF7900BFE62C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				BEC974302A1ADFD800BFE62C /* LoadGeoJSON.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -197,7 +194,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */,
-				BEC974312A1ADFD800BFE62C /* LoadGeoJSON.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
 				BEC974342A1AE21500BFE62C /* GeoJSON.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
