@@ -19,7 +19,8 @@
             "properties": {
                 "ID": 2,
                 "kode": 52,
-                "Propinsi": "NUSA TENGGARA BARAT"
+                "Propinsi": "NUSA TENGGARA BARAT",
+                "SUMBER": "Peta Dasar BAKOSURTANAL Skala 1 : 250.000"
             }
         }
     ]
