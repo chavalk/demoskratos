@@ -23,6 +23,30 @@ struct MapView: UIViewRepresentable {
     func makeCoordinator() -> MapCoordinator {
         return MapCoordinator(parent: self)
     }
+    
+    func parseGeoJSON() -> [MKOverlay] {
+        guard let url = Bundle.main.url(forResource: "map", withExtension: "json") else {
+            fatalError("Unable to get geojson")
+        }
+        var geoJson = [MKGeoJSONObject]()
+        do {
+            let data = try Data(contentsOf: url)
+            geoJson = try MKGeoJSONDecoder().decode(data)
+        } catch {
+            fatalError("Unable to decode gejson")
+        }
+        var overlays = [MKOverlay]()
+        for item in geoJson {
+            if let feature = item as? MKGeoJSONFeature {
+                for geo in feature.geometry {
+                    if let polygon = geo as? MKPolygon {
+                        overlays.append(polygon)
+                    }
+                }
+            }
+        }
+        return overlays
+    }
 }
 
 extension MapView {
