@@ -12,7 +12,7 @@ struct FeedRow: View {
         VStack {
             HStack(alignment: .top) {
                 NavigationLink {
-                    Text("Profile")
+                    MapView()
                 } label: {
                     Image("texas-house-123")
                         .resizable()
