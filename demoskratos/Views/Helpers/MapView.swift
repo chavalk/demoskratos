@@ -59,5 +59,16 @@ extension MapView {
             self.parent = parent
             super.init()
         }
+        
+        func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+            
+            if let polygon = overlay as? MKPolygon {
+                let renderer = MKPolygonRenderer(polygon: polygon)
+                renderer.fillColor = UIColor.red
+                renderer.strokeColor = UIColor.black
+                return renderer
+            }
+            return MKOverlayRenderer(overlay: overlay)
+        }
     }
 }
