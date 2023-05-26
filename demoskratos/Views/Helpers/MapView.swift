@@ -13,6 +13,7 @@ struct MapView: UIViewRepresentable {
     let mapView = MKMapView()
     
     func makeUIView(context: Context) -> some UIView {
+        mapView.addOverlays(self.parseGeoJSON())
         return mapView
     }
     
