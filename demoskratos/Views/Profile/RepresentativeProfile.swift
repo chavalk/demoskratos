@@ -9,7 +9,13 @@ import SwiftUI
 
 struct RepresentativeProfile: View {
     var body: some View {
-        MapView()
+        VStack {
+            MapView()
+                .ignoresSafeArea(edges: .top)
+                .frame(height: 300)
+            
+            Spacer()
+        }
     }
 }
 
