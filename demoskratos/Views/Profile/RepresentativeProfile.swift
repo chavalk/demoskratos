@@ -12,7 +12,7 @@ struct RepresentativeProfile: View {
         VStack {
             MapView()
                 .ignoresSafeArea(edges: .top)
-                .frame(height: 300)
+                .frame(height: 250)
             
             Spacer()
         }
