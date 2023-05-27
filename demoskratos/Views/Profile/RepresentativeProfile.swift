@@ -8,14 +8,18 @@
 import SwiftUI
 
 struct RepresentativeProfile: View {
+    var image = Image("texas-house-123")
+    
     var body: some View {
-        VStack {
+        ScrollView {
             MapView()
-                .ignoresSafeArea(edges: .top)
-                .frame(height: 250)
+                .frame(height: 400)
             
-            Spacer()
+            CircleImage(image: image)
+                .offset(y: -130)
+                .padding(.bottom, -130)
         }
+        .ignoresSafeArea(edges: .top)
     }
 }
 
