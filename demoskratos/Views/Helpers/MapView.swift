@@ -15,7 +15,7 @@ struct MapView: UIViewRepresentable {
     func makeUIView(context: Context) -> some UIView {
         let region = MKCoordinateRegion(
             center: CLLocationCoordinate2D(latitude: 29.50030, longitude: -98.50374),
-            span: MKCoordinateSpan(latitudeDelta: 0.16, longitudeDelta: 0.16))
+            span: MKCoordinateSpan(latitudeDelta: 0.26, longitudeDelta: 0.26))
         mapView.setRegion(region, animated: true)
         mapView.delegate = context.coordinator
         mapView.addOverlays(self.parseGeoJSON())
