@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E13E32A1F1488005E2986 /* MapView.swift */; };
 		BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */; };
+		BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2C2A22577600AA9D4C /* CircleImage.swift */; };
 		BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */; };
 		BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */; };
 		BE9F5C5A29F9C3BD00E57EDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		BE4E13E32A1F1488005E2986 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeProfile.swift; sourceTree = "<group>"; };
+		BE694D2C2A22577600AA9D4C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BE9F5C5229F9C3BB00E57EDE /* demoskratos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoskratos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoskratosApp.swift; sourceTree = "<group>"; };
 		BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 		BEC9742F2A1ADF7900BFE62C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BE694D2C2A22577600AA9D4C /* CircleImage.swift */,
 				BE4E13E32A1F1488005E2986 /* MapView.swift */,
 			);
 			path = Helpers;
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */,
+				BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */,
 				BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */,
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
