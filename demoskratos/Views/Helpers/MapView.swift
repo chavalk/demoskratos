@@ -69,8 +69,8 @@ extension MapView {
             
             if let polygon = overlay as? MKPolygon {
                 let renderer = MKPolygonRenderer(polygon: polygon)
-                renderer.fillColor = UIColor.gray.withAlphaComponent(0.2)
-                renderer.strokeColor = UIColor.gray
+                renderer.fillColor = UIColor.red.withAlphaComponent(0.2)
+                renderer.strokeColor = UIColor.red
                 renderer.lineWidth = 2.0
                 return renderer
             }
