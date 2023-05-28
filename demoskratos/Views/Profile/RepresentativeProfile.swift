@@ -18,6 +18,15 @@ struct RepresentativeProfile: View {
             CircleImage(image: image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
+            
+            Text("Diego M. Bernal")
+                .font(.title)
+                .bold()
+            
+            Text("Texas House Member")
+            
+            Text("District 123")
+                .foregroundColor(.secondary)
         }
         .ignoresSafeArea(edges: .top)
     }
