@@ -27,6 +27,18 @@ struct RepresentativeProfile: View {
             
             Text("District 123")
                 .foregroundColor(.secondary)
+            
+            Divider()
+                .padding()
+            
+            HStack {
+                Text("Recent Votes")
+                    .font(.title2)
+                .bold()
+                
+                Spacer()
+            }
+            .padding(.leading)
         }
         .ignoresSafeArea(edges: .top)
     }
