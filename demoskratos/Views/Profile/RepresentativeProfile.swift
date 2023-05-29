@@ -39,6 +39,10 @@ struct RepresentativeProfile: View {
                 Spacer()
             }
             .padding(.leading)
+            
+            RecentVotesRow()
+            RecentVotesRow()
+            RecentVotesRow()
         }
         .ignoresSafeArea(edges: .top)
     }
