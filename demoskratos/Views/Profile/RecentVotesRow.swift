@@ -34,6 +34,8 @@ struct RecentVotesRow: View {
                     
                     + Text("Senate Bill No. 1725.")
                         .bold()
+                    
+                    FeedRowButtons()
                 }
                 
             }
