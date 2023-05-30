@@ -21,7 +21,19 @@ struct RecentVotesRow: View {
                     Text("Diego M. Bernal")
                         .font(.headline)
                     
-                    Text("Voted For Senate Concurrent Resolution No. 61 instructing the enrolling clerk of the senate to make a correction in Senate Bill No. 1725.")
+                    Text("Voted ")
+                    
+                    + Text("For ")
+                        .bold()
+                        .foregroundColor(.green)
+                    
+                    + Text("Senate Concurrent Resolution No. 61 ")
+                        .bold()
+                    
+                    + Text("instructing the enrolling clerk of the senate to make a correction in ")
+                    
+                    + Text("Senate Bill No. 1725.")
+                        .bold()
                 }
                 
             }
