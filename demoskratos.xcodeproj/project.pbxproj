@@ -57,6 +57,13 @@
 			path = Profile;
 			sourceTree = "<group>";
 		};
+		BE7F83CD2A28433D002D1AD0 /* Candidates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Candidates;
+			sourceTree = "<group>";
+		};
 		BE9F5C4929F9C3BB00E57EDE = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +106,7 @@
 			children = (
 				BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */,
 				BEC974272A0FF9A600BFE62C /* Feed */,
+				BE7F83CD2A28433D002D1AD0 /* Candidates */,
 				BE694D292A2194AC00AA9D4C /* Profile */,
 				BEC9742F2A1ADF7900BFE62C /* Helpers */,
 			);
