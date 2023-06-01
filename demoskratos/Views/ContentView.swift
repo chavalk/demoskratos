@@ -12,7 +12,7 @@ struct ContentView: View {
         TabView {
             Feed()
                 .tabItem {
-                    Label("My Feed", systemImage: "person")
+                    Label("My Reps", systemImage: "person")
                 }
         }
     }
