@@ -20,6 +20,7 @@
 		BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974282A0FFA5700BFE62C /* Feed.swift */; };
 		BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */; };
 		BEC9742E2A1AB4A900BFE62C /* map.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC9742D2A1AB4A900BFE62C /* map.json */; };
+		BEFF09962A2B98E700A36FB3 /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEFF09952A2B98E700A36FB3 /* Landing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowButtons.swift; sourceTree = "<group>"; };
 		BEC9742D2A1AB4A900BFE62C /* map.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = map.json; sourceTree = "<group>"; };
+		BEFF09952A2B98E700A36FB3 /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		BEBA3BA82A2AF7D800CD1981 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				BEFF09952A2B98E700A36FB3 /* Landing.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */,
 				BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */,
 				BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */,
+				BEFF09962A2B98E700A36FB3 /* Landing.swift in Sources */,
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
 				BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */,
