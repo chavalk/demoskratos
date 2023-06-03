@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Landing: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 20) {
             Button {
                 
             } label: {
