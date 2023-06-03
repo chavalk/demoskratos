@@ -20,6 +20,19 @@ struct Landing: View {
             .frame(width: UIScreen.main.bounds.width - 32, height: 50)
             .background(Color.black)
             .cornerRadius(25)
+            
+            Button {
+                
+            } label: {
+                Text("Log in")
+                    .foregroundColor(.black)
+                    .fontWeight(.semibold)
+            }
+            .frame(width: UIScreen.main.bounds.width - 32, height: 50)
+            .overlay(
+                RoundedRectangle(cornerRadius: 25)
+                    .stroke(Color.black, lineWidth: 1)
+            )
         }
     }
 }
