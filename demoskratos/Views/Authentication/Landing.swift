@@ -9,30 +9,43 @@ import SwiftUI
 
 struct Landing: View {
     var body: some View {
-        VStack(spacing: 20) {
-            Button {
+        VStack(spacing: 60) {
+            VStack(alignment: .center, spacing: 25) {
+                Text("Demoskratos")
+                    .font(.system(size: 60))
+                    .fontWeight(.bold)
                 
-            } label: {
-                Text("Create Account")
-                    .foregroundColor(.white)
-                    .fontWeight(.semibold)
-            }
-            .frame(width: UIScreen.main.bounds.width - 32, height: 50)
-            .background(Color.black)
-            .cornerRadius(25)
-            
-            Button {
-                
-            } label: {
-                Text("Log in")
+                Text("Stay up to date with your elected representatives.")
+                    .font(.system(size: 30))
+                    .fontWeight(.bold)
                     .foregroundColor(.black)
-                    .fontWeight(.semibold)
             }
-            .frame(width: UIScreen.main.bounds.width - 32, height: 50)
-            .overlay(
-                RoundedRectangle(cornerRadius: 25)
-                    .stroke(Color.black, lineWidth: 1)
-            )
+            
+            VStack(spacing: 15) {
+                Button {
+                    
+                } label: {
+                    Text("Create Account")
+                        .foregroundColor(.white)
+                        .fontWeight(.semibold)
+                }
+                .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                .background(Color.black)
+                .cornerRadius(25)
+                
+                Button {
+                    
+                } label: {
+                    Text("Log in")
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                }
+                .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                .overlay(
+                    RoundedRectangle(cornerRadius: 25)
+                        .stroke(Color.black, lineWidth: 1)
+                )
+            }
         }
     }
 }
