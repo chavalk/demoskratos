@@ -104,10 +104,18 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BEBA3BA82A2AF7D800CD1981 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		BEC974262A0FF96F00BFE62C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */,
+				BEBA3BA82A2AF7D800CD1981 /* Authentication */,
 				BEC974272A0FF9A600BFE62C /* Feed */,
 				BE7F83CD2A28433D002D1AD0 /* Candidates */,
 				BE694D292A2194AC00AA9D4C /* Profile */,
