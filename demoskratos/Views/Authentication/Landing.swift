@@ -19,7 +19,7 @@ struct Landing: View {
             }
             .frame(width: UIScreen.main.bounds.width - 32, height: 50)
             .background(Color.black)
-            .cornerRadius(10)
+            .cornerRadius(25)
         }
     }
 }
