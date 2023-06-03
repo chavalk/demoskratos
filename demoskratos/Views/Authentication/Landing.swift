@@ -13,7 +13,7 @@ struct Landing: View {
             Button {
                 
             } label: {
-                Text("Sign up")
+                Text("Create Account")
                     .foregroundColor(.white)
                     .fontWeight(.semibold)
             }
