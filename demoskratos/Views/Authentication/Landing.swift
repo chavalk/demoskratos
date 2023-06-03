@@ -11,6 +11,9 @@ struct Landing: View {
     var body: some View {
         VStack(spacing: 60) {
             VStack(alignment: .center, spacing: 25) {
+                
+                Spacer()
+                
                 Text("Demoskratos")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
@@ -20,6 +23,8 @@ struct Landing: View {
                     .fontWeight(.bold)
                     .foregroundColor(.black)
             }
+            
+            Spacer()
             
             VStack(spacing: 15) {
                 Button {
@@ -45,6 +50,8 @@ struct Landing: View {
                     RoundedRectangle(cornerRadius: 25)
                         .stroke(Color.black, lineWidth: 1)
                 )
+                
+                Spacer()
             }
         }
     }
