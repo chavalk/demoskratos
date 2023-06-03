@@ -9,7 +9,18 @@ import SwiftUI
 
 struct Landing: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Button {
+                
+            } label: {
+                Text("Sign up")
+                    .foregroundColor(.white)
+                    .fontWeight(.semibold)
+            }
+            .frame(width: UIScreen.main.bounds.width - 32, height: 50)
+            .background(Color.black)
+            .cornerRadius(10)
+        }
     }
 }
 
