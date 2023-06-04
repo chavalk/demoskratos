@@ -28,16 +28,16 @@ struct Landing: View {
                 Spacer()
                 
                 VStack(spacing: 15) {
-                    Button {
-                        
+                    NavigationLink {
+                        Text("Create account")
                     } label: {
-                        Text("Create Account")
+                        Text("Create account")
                             .foregroundColor(.white)
                             .fontWeight(.semibold)
                             .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                            .background(Color.black)
+                            .cornerRadius(25)
                     }
-                    .background(Color.black)
-                    .cornerRadius(25)
                     
                     Button {
                         
