@@ -39,18 +39,18 @@ struct Landing: View {
                             .cornerRadius(25)
                     }
                     
-                    Button {
-                        
+                    NavigationLink {
+                        Text("Log in")
                     } label: {
                         Text("Log in")
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
                             .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 25)
+                                    .stroke(Color.black, lineWidth: 1)
+                            )
                     }
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 25)
-                            .stroke(Color.black, lineWidth: 1)
-                    )
                 }
             }
         }
