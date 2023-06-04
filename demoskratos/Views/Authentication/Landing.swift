@@ -10,10 +10,10 @@ import SwiftUI
 struct Landing: View {
     var body: some View {
         VStack(spacing: 60) {
+            
+            Spacer()
+            
             VStack(alignment: .center, spacing: 25) {
-                
-                Spacer()
-                
                 Text("Demoskratos")
                     .font(.system(size: 60))
                     .fontWeight(.bold)
@@ -50,8 +50,6 @@ struct Landing: View {
                     RoundedRectangle(cornerRadius: 25)
                         .stroke(Color.black, lineWidth: 1)
                 )
-                
-                Spacer()
             }
         }
     }
