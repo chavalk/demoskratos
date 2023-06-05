@@ -29,7 +29,7 @@ struct Landing: View {
                 
                 VStack(spacing: 15) {
                     NavigationLink {
-                        Text("Create account")
+                        Registration()
                     } label: {
                         Text("Create account")
                             .foregroundColor(.white)
