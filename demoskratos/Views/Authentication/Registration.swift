@@ -20,7 +20,7 @@ struct Registration: View {
             VStack(spacing: 32) {
                 CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
                 
-                CustomInputField(text: $password, title: "Password", placeholder: "Enter your password")
+                CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
             }
             .padding(.horizontal)
             .padding(.top, 12)

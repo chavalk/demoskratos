@@ -11,6 +11,7 @@ struct CustomInputField: View {
     @Binding var text: String
     let title: String
     let placeholder: String
+    var isSecureField = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -18,8 +19,13 @@ struct CustomInputField: View {
                 .fontWeight(.semibold)
                 .font(.footnote)
             
-            TextField(placeholder, text: $text)
-                .foregroundColor(.white)
+            if isSecureField {
+                SecureField(placeholder, text: $text)
+                    .foregroundColor(.white)
+            } else {
+                TextField(placeholder, text: $text)
+                    .foregroundColor(.white)
+            }
             
             Rectangle()
                 .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
