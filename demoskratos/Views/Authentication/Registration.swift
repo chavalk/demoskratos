@@ -13,6 +13,9 @@ struct Registration: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
+            
+            Spacer()
+            
             Text("Create new account")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
