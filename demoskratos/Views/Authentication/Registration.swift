@@ -19,7 +19,6 @@ struct Registration: View {
                 Image(systemName: "arrow.left")
                     .font(.title)
                     .imageScale(.medium)
-                    .padding()
                     .foregroundColor(.black)
             }
             
