@@ -12,10 +12,12 @@ struct Registration: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Text("Create new account")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
+            
+            Spacer()
             
             VStack(spacing: 32) {
                 CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
