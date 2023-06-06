@@ -35,10 +35,10 @@ struct Registration: View {
                     
                 } label: {
                     Text("Sign up")
-                        .foregroundColor(.black)
+                        .foregroundColor(.white)
                         .fontWeight(.semibold)
                         .frame(width: UIScreen.main.bounds.width - 48, height: 50)
-                        .background(Color.white)
+                        .background(Color.black)
                         .cornerRadius(25)
                 }
                 
