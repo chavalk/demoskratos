@@ -8,8 +8,42 @@
 import SwiftUI
 
 struct Login: View {
+    @State var email = ""
+    @State var password = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 20) {
+            
+            Spacer()
+            
+            Text("Log in")
+                .font(.system(size: 40))
+                .fontWeight(.semibold)
+            
+            Spacer()
+            
+            VStack(spacing: 40) {
+                VStack(spacing: 56) {
+                    CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
+                    
+                    CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                }
+                
+                Button {
+                    
+                } label: {
+                    Text("Log in")
+                        .foregroundColor(.white)
+                        .fontWeight(.semibold)
+                        .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                        .background(Color.black)
+                        .cornerRadius(25)
+                }
+                
+                Spacer()
+            }
+        }
+        .padding(.leading)
     }
 }
 
