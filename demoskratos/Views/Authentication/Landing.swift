@@ -22,7 +22,6 @@ struct Landing: View {
                     Text("Stay up to date with your elected representatives.")
                         .font(.system(size: 30))
                         .fontWeight(.bold)
-                        .foregroundColor(.black)
                 }
                 
                 Spacer()
