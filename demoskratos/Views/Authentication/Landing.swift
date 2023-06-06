@@ -41,6 +41,7 @@ struct Landing: View {
                     
                     NavigationLink {
                         Login()
+                            .navigationBarBackButtonHidden(true)
                     } label: {
                         Text("Log in")
                             .foregroundColor(.black)
