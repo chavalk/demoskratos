@@ -9,7 +9,11 @@ import SwiftUI
 
 struct Registration: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Text("Create new account")
+                .font(.system(size: 30))
+                .fontWeight(.semibold)
+        }
     }
 }
 
