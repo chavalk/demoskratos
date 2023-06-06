@@ -18,31 +18,9 @@ struct Registration: View {
                 .fontWeight(.semibold)
             
             VStack(spacing: 32) {
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Email Address")
-                        .fontWeight(.semibold)
-                        .font(.footnote)
-                    
-                    TextField("Enter your email address", text: $email)
-                        .foregroundColor(.white)
-                    
-                    Rectangle()
-                        .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
-                        .frame(width: UIScreen.main.bounds.width - 32, height: 0.7)
-                }
+                CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
                 
-                VStack(alignment: .leading, spacing: 12) {
-                    Text("Password")
-                        .fontWeight(.semibold)
-                        .font(.footnote)
-                    
-                    TextField("Enter your password", text: $password)
-                        .foregroundColor(.white)
-                    
-                    Rectangle()
-                        .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
-                        .frame(width: UIScreen.main.bounds.width - 32, height: 0.7)
-                }
+                CustomInputField(text: $password, title: "Password", placeholder: "Enter your password")
             }
             .padding(.horizontal)
             .padding(.top, 12)
