@@ -12,7 +12,7 @@ struct Registration: View {
     @State var password = ""
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading, spacing: 20) {
             Text("Create new account")
                 .font(.system(size: 30))
                 .fontWeight(.semibold)
@@ -40,6 +40,8 @@ struct Registration: View {
                         .background(Color.white)
                         .cornerRadius(25)
                 }
+                
+                Spacer()
             }
         }
         .padding(.leading)
