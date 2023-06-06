@@ -13,8 +13,15 @@ struct Registration: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
-            
-            Spacer()
+            Button {
+                
+            } label: {
+                Image(systemName: "arrow.left")
+                    .font(.title)
+                    .imageScale(.medium)
+                    .padding()
+                    .foregroundColor(.black)
+            }
             
             Text("Create new account")
                 .font(.system(size: 40))
