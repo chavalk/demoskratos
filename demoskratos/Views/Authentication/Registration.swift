@@ -26,6 +26,18 @@ struct Registration: View {
                 
                 CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
             }
+            
+            Button {
+                
+            } label: {
+                Text("Sign up")
+                    .foregroundColor(.black)
+                    .fontWeight(.semibold)
+                    .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                    .background(Color.white)
+                    .cornerRadius(25)
+            }
+
         }
         .padding(.leading)
     }
