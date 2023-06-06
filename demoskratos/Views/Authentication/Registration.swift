@@ -17,7 +17,7 @@ struct Registration: View {
             Spacer()
             
             Text("Create new account")
-                .font(.system(size: 30))
+                .font(.system(size: 40))
                 .fontWeight(.semibold)
             
             Spacer()
