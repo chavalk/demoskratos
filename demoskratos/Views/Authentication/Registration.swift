@@ -19,25 +19,28 @@ struct Registration: View {
             
             Spacer()
             
-            VStack(spacing: 56) {
-                CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
+            VStack {
+                VStack(spacing: 56) {
+                    CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
+                    
+                    CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                    
+                    CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                }
                 
-                CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                Spacer()
                 
-                CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                Button {
+                    
+                } label: {
+                    Text("Sign up")
+                        .foregroundColor(.black)
+                        .fontWeight(.semibold)
+                        .frame(width: UIScreen.main.bounds.width - 48, height: 50)
+                        .background(Color.white)
+                        .cornerRadius(25)
+                }
             }
-            
-            Button {
-                
-            } label: {
-                Text("Sign up")
-                    .foregroundColor(.black)
-                    .fontWeight(.semibold)
-                    .frame(width: UIScreen.main.bounds.width - 48, height: 50)
-                    .background(Color.white)
-                    .cornerRadius(25)
-            }
-
         }
         .padding(.leading)
     }
