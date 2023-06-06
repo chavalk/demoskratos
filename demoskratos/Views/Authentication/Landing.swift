@@ -39,7 +39,7 @@ struct Landing: View {
                     }
                     
                     NavigationLink {
-                        Text("Log in")
+                        Login()
                     } label: {
                         Text("Log in")
                             .foregroundColor(.black)
