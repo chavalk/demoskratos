@@ -10,11 +10,12 @@ import SwiftUI
 struct Registration: View {
     @State var email = ""
     @State var password = ""
+    @Environment(\.dismiss) private var dismiss
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
             Button {
-                
+                dismiss()
             } label: {
                 Image(systemName: "arrow.left")
                     .font(.title)
