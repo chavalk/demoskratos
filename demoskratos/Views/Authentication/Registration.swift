@@ -22,7 +22,7 @@ struct Registration: View {
             
             Spacer()
             
-            VStack {
+            VStack(spacing: 40) {
                 VStack(spacing: 56) {
                     CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
                     
@@ -30,8 +30,6 @@ struct Registration: View {
                     
                     CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
                 }
-                
-                Spacer()
                 
                 Button {
                     
