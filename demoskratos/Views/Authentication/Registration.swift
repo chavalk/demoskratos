@@ -27,7 +27,7 @@ struct Registration: View {
                 CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
             }
         }
-        .padding(.horizontal)
+        .padding(.leading)
     }
 }
 
