@@ -11,16 +11,22 @@ struct ContentView: View {
     @EnvironmentObject var authentication: Authentication
     
     var body: some View {
-        TabView {
-            Feed()
-                .tabItem {
-                    Label("My Reps", systemImage: "person")
+        Group {
+            if authentication.userSession == nil {
+                Landing()
+            } else {
+                TabView {
+                    Feed()
+                        .tabItem {
+                            Label("My Reps", systemImage: "person")
+                        }
+                    
+                    Candidates()
+                        .tabItem {
+                            Label("My Candidates", systemImage: "person.2")
+                        }
                 }
-            
-            Candidates()
-                .tabItem {
-                    Label("My Candidates", systemImage: "person.2")
-                }
+            }
         }
     }
 }
