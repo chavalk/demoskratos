@@ -22,6 +22,7 @@
 		BEBF28C22A2FD3EE00390E90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28C12A2FD3EE00390E90 /* FirebaseFirestore */; };
 		BEBF28C42A2FD3EE00390E90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28C32A2FD3EE00390E90 /* FirebaseFirestoreSwift */; };
 		BEBF28C62A2FD3EE00390E90 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28C52A2FD3EE00390E90 /* FirebaseStorage */; };
+		BEBF28C92A30196500390E90 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF28C82A30196500390E90 /* Authentication.swift */; };
 		BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974242A0F1A0B00BFE62C /* FeedRow.swift */; };
 		BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC974282A0FFA5700BFE62C /* Feed.swift */; };
 		BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */; };
@@ -44,6 +45,7 @@
 		BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVotesRow.swift; sourceTree = "<group>"; };
 		BEBF28B22A2F80A700390E90 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BEBF28C82A30196500390E90 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
 		BEC974242A0F1A0B00BFE62C /* FeedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
 		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
 		BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRowButtons.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		BEBF28C72A3018DE00390E90 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BEBF28C82A30196500390E90 /* Authentication.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
 				BEBF28B32A2F80A700390E90 /* Login.swift in Sources */,
+				BEBF28C92A30196500390E90 /* Authentication.swift in Sources */,
 				BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
