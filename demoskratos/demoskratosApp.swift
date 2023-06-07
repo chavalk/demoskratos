@@ -19,12 +19,14 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 
 @main
 struct demoskratosApp: App {
+    @StateObject var authentication = Authentication()
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
 
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(authentication)
         }
     }
 }
