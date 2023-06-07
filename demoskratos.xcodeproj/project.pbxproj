@@ -106,6 +106,7 @@
 			children = (
 				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
 				BEC974262A0FF96F00BFE62C /* Views */,
+				BEBF28C72A3018DE00390E90 /* ViewModels */,
 				BEC974322A1AE1D800BFE62C /* Model */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
 				BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */,
@@ -131,6 +132,13 @@
 				BEBF28B22A2F80A700390E90 /* Login.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		BEBF28C72A3018DE00390E90 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		BEC974262A0FF96F00BFE62C /* Views */ = {
