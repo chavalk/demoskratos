@@ -33,11 +33,11 @@ struct Registration: View {
             
             VStack(spacing: 40) {
                 VStack(spacing: 56) {
+                    CustomInputField(text: $fullName, title: "Full Name", placeholder: "Enter your full name")
+                    
                     CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
                     
-                    CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
-                    
-                    CustomInputField(text: $password, title: "Password", placeholder: "Enter your password", isSecureField: true)
+                    CustomInputField(text: $password, title: "Create Password", placeholder: "Enter your password", isSecureField: true)
                 }
                 
                 Button {
