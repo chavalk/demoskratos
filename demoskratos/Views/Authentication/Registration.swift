@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Registration: View {
+    @State private var fullName = ""
     @State private var email = ""
     @State private var password = ""
     @Environment(\.dismiss) private var dismiss
