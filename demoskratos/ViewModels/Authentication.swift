@@ -30,6 +30,7 @@ class Authentication: ObservableObject {
     func signOut() {
         do {
             try Auth.auth().signOut()
+            print("DEBUG: Did sign out with firebase")
         } catch let error {
             print("DEBUG: Failed to sign out with error: \(error.localizedDescription)")
         }
