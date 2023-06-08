@@ -38,7 +38,7 @@ struct Login: View {
                 }
                 
                 Button {
-                    
+                    authentication.signIn(withEmail: email, password: password)
                 } label: {
                     Text("Log in")
                         .foregroundColor(.white)
