@@ -109,7 +109,7 @@
 				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
 				BEC974262A0FF96F00BFE62C /* Views */,
 				BEBF28C72A3018DE00390E90 /* ViewModels */,
-				BEC974322A1AE1D800BFE62C /* Model */,
+				BEC974322A1AE1D800BFE62C /* Models */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
 				BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */,
 				BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */,
@@ -185,11 +185,11 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		BEC974322A1AE1D800BFE62C /* Model */ = {
+		BEC974322A1AE1D800BFE62C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
