@@ -22,8 +22,7 @@ class Authentication: ObservableObject {
                 return
             }
             
-            print("DEBUG: Signed user in successfully")
-            print("DEBUG: User id \(result?.user.uid)")
+            self.userSession = result?.user
         }
     }
     
@@ -34,15 +33,14 @@ class Authentication: ObservableObject {
                 return
             }
             
-            print("DEBUG: Registered user successfully")
-            print("DEBUG: User id \(result?.user.uid)")
+            self.userSession = result?.user
         }
     }
     
     func signOut() {
         do {
             try Auth.auth().signOut()
-            print("DEBUG: Did sign out with firebase")
+            self.userSession = nil
         } catch let error {
             print("DEBUG: Failed to sign out with error: \(error.localizedDescription)")
         }
