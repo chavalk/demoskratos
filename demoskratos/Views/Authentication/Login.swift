@@ -11,6 +11,7 @@ struct Login: View {
     @State var email = ""
     @State var password = ""
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject var authentication: Authentication
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
