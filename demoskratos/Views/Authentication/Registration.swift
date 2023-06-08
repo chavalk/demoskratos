@@ -40,7 +40,7 @@ struct Registration: View {
                 }
                 
                 Button {
-                    
+                    authentication.registerUser(withEmail: email, password: password)
                 } label: {
                     Text("Sign up")
                         .foregroundColor(.white)
