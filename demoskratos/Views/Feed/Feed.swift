@@ -17,6 +17,14 @@ struct Feed: View {
                 FeedRow()
             }
             .navigationTitle("Demoskratos")
+            .toolbar {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "lasso")
+                }
+
+            }
 //            .toolbarBackground(Color.pink, for: .navigationBar)
 //            .toolbarBackground(.visible, for: .navigationBar)
 //            .navigationBarTitleDisplayMode(.inline)
