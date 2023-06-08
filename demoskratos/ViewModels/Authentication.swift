@@ -16,6 +16,7 @@ class Authentication: ObservableObject {
     }
     
     func registerUser(withEmail email: String, password: String, fullName: String) {
-        
+        print("DEBUG: Email \(email)")
+        print("DEBUG: Full Name \(fullName)")
     }
 }
