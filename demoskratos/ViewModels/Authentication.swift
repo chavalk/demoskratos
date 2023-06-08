@@ -26,4 +26,12 @@ class Authentication: ObservableObject {
             print("DEBUG: User id \(result?.user.uid)")
         }
     }
+    
+    func signOut() {
+        do {
+            try Auth.auth().signOut()
+        } catch let error {
+            print("DEBUG: Failed to sign out with error: \(error.localizedDescription)")
+        }
+    }
 }
