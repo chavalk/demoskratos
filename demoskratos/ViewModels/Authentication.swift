@@ -16,7 +16,14 @@ class Authentication: ObservableObject {
     }
     
     func registerUser(withEmail email: String, password: String, fullName: String) {
-        print("DEBUG: Email \(email)")
-        print("DEBUG: Full Name \(fullName)")
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            if let error = error {
+                print("DEBUG: Failed to sign up with error \(error.localizedDescription)")
+                return
+            }
+            
+            print("DEBUG: Registered user successfully")
+            print("DEBUG: User id \(result?.user.uid)")
+        }
     }
 }
