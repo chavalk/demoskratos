@@ -15,7 +15,7 @@ class Authentication: ObservableObject {
         userSession = Auth.auth().currentUser
     }
     
-    func registerUser(withEmail email: String, password: String) {
+    func registerUser(withEmail email: String, password: String, fullName: String) {
         
     }
 }
