@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Feed: View {
+    @EnvironmentObject var authentication: Authentication
+    
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -19,7 +21,7 @@ struct Feed: View {
             .navigationTitle("Demoskratos")
             .toolbar {
                 Button {
-                    
+                    authentication.signOut()
                 } label: {
                     Image(systemName: "lasso")
                 }
