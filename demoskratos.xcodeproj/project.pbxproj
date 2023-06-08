@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E13E32A1F1488005E2986 /* MapView.swift */; };
+		BE55AC192A3247FF00682547 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55AC182A3247FF00682547 /* User.swift */; };
 		BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */; };
 		BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2C2A22577600AA9D4C /* CircleImage.swift */; };
 		BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F83CE2A2843AB002D1AD0 /* Candidates.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		BE4E13E32A1F1488005E2986 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BE55AC182A3247FF00682547 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeProfile.swift; sourceTree = "<group>"; };
 		BE694D2C2A22577600AA9D4C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BE7F83CE2A2843AB002D1AD0 /* Candidates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidates.swift; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		BEC974322A1AE1D800BFE62C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				BE55AC182A3247FF00682547 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */,
 				BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */,
 				BEFF09962A2B98E700A36FB3 /* Landing.swift in Sources */,
+				BE55AC192A3247FF00682547 /* User.swift in Sources */,
 				BEFF09982A2D903E00A36FB3 /* Registration.swift in Sources */,
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
