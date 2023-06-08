@@ -41,7 +41,7 @@ struct Registration: View {
                 }
                 
                 Button {
-                    authentication.registerUser(withEmail: email, password: password)
+                    authentication.registerUser(withEmail: email, password: password, fullName: fullName)
                 } label: {
                     Text("Sign up")
                         .foregroundColor(.white)
