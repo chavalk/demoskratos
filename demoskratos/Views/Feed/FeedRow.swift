@@ -14,7 +14,7 @@ struct FeedRow: View {
                 NavigationLink {
                     RepresentativeProfile()
                 } label: {
-                    Image("texas-house-123")
+                    Image("us-house-tx-21")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .clipShape(Circle())
@@ -31,19 +31,21 @@ struct FeedRow: View {
 //                            .foregroundColor(.secondary)
 //                    }
                     
-                    Text("Diego M. Bernal")
+                    Text("Chip Roy")
                         .font(.headline)
                     
-                    Text("Your Texas House Representative just voted ")
+                    Text("Your United States House Representative just voted ")
                     
-                    + Text("Against ")
+                    + Text("No ")
                         .bold()
                         .foregroundColor(.red)
                     
-                    + Text("Senate Bill 14 ")
+                    + Text("on agreeing to ")
+                    
+                    + Text("House Resolution No. 463 ")
                         .bold()
                     
-                    + Text("relating to prohibitions on the provision to certain children of procedures and treatments for gender transitioning, gender reassignment, or gender dysphoria and on the use of public money or public assistance to provide those procedures and treatments.")
+                    + Text("providing for consideration of the bill (H.R. 277) REINS Act; providing for consideration of the bill (H.R. 288) Separation of Powers Restoration Act; providing for consideration of the bill (H.R. 1615) Gas Stove Protection and Freedom Act; and providing for consideration of the bill (H.R. 1640) Save Our Stoves Act.")
                     
                     FeedRowButtons()
                 }
