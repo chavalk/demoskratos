@@ -19,13 +19,13 @@ struct RepresentativeProfile: View {
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
-            Text("Diego M. Bernal")
+            Text("Chip Roy")
                 .font(.title)
                 .bold()
             
-            Text("Texas House Member")
+            Text("United States House Representative")
             
-            Text("District 123")
+            Text("District 21")
                 .foregroundColor(.secondary)
             
             Divider()
