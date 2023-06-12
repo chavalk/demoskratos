@@ -11,29 +11,28 @@ struct RecentVotesRow: View {
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
-                Image("texas-house-123")
+                Image("us-house-tx-21")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .clipShape(Circle())
                     .frame(width: 56, height: 56)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Diego M. Bernal")
+                    Text("Chip Roy")
                         .font(.headline)
                     
                     Text("Voted ")
                     
-                    + Text("For ")
+                    + Text("No ")
                         .bold()
-                        .foregroundColor(.green)
+                        .foregroundColor(.red)
                     
-                    + Text("Senate Concurrent Resolution No. 61 ")
+                    + Text("on agreeing to ")
+                    
+                    + Text("House Resolution No. 463 ")
                         .bold()
                     
-                    + Text("instructing the enrolling clerk of the senate to make a correction in ")
-                    
-                    + Text("Senate Bill No. 1725.")
-                        .bold()
+                    + Text("providing for consideration of the bill (H.R. 277) REINS Act; providing for consideration of the bill (H.R. 288) Separation of Powers Restoration Act; providing for consideration of the bill (H.R. 1615) Gas Stove Protection and Freedom Act; and providing for consideration of the bill (H.R. 1640) Save Our Stoves Act.")
                     
                     FeedRowButtons()
                 }
