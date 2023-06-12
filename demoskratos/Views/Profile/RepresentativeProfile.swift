@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RepresentativeProfile: View {
-    var image = Image("texas-house-123")
+    var image = Image("us-house-tx-21")
     
     var body: some View {
         ScrollView {
