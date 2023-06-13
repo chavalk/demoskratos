@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Landing: View {
+    @Environment(\.colorScheme) var colorScheme
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 60) {
@@ -32,10 +34,10 @@ struct Landing: View {
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         Text("Create account")
-                            .foregroundColor(.white)
+                            .foregroundColor(colorScheme == .dark ? Color.black : Color.white)
                             .fontWeight(.semibold)
                             .frame(width: UIScreen.main.bounds.width - 48, height: 50)
-                            .background(Color.black)
+                            .background(colorScheme == .dark ? Color.white : Color.black)
                             .cornerRadius(25)
                     }
                     
@@ -44,12 +46,12 @@ struct Landing: View {
                             .navigationBarBackButtonHidden(true)
                     } label: {
                         Text("Log in")
-                            .foregroundColor(.black)
+                            .foregroundColor(colorScheme == .dark ? Color.white : Color.black)
                             .fontWeight(.semibold)
                             .frame(width: UIScreen.main.bounds.width - 48, height: 50)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 25)
-                                    .stroke(Color.black, lineWidth: 1)
+                                    .stroke(colorScheme == .dark ? Color.white : Color.black, lineWidth: 1)
                             )
                     }
                 }
