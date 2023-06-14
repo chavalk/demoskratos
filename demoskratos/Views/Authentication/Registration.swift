@@ -12,6 +12,7 @@ struct Registration: View {
     @State private var email = ""
     @State private var password = ""
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var authentication: Authentication
     
     var body: some View {
@@ -22,7 +23,7 @@ struct Registration: View {
                 Image(systemName: "arrow.left")
                     .font(.title)
                     .imageScale(.medium)
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
             }
             
             Text("Create new account")
@@ -44,10 +45,10 @@ struct Registration: View {
                     authentication.registerUser(withEmail: email, password: password, fullName: fullName)
                 } label: {
                     Text("Sign up")
-                        .foregroundColor(.white)
+                        .foregroundColor(colorScheme == .dark ? .black : .white)
                         .fontWeight(.semibold)
                         .frame(width: UIScreen.main.bounds.width - 48, height: 50)
-                        .background(Color.black)
+                        .background(colorScheme == .dark ? Color.white : Color.black)
                         .cornerRadius(25)
                 }
                 
