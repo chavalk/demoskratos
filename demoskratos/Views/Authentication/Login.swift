@@ -11,6 +11,7 @@ struct Login: View {
     @State var email = ""
     @State var password = ""
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var authentication: Authentication
     
     var body: some View {
@@ -21,7 +22,7 @@ struct Login: View {
                 Image(systemName: "arrow.left")
                     .font(.title)
                     .imageScale(.medium)
-                    .foregroundColor(.black)
+                    .foregroundColor(colorScheme == .dark ? .white : .black)
             }
             
             Text("Log in")
@@ -41,10 +42,10 @@ struct Login: View {
                     authentication.signIn(withEmail: email, password: password)
                 } label: {
                     Text("Log in")
-                        .foregroundColor(.white)
+                        .foregroundColor(colorScheme == .dark ? .black : .white)
                         .fontWeight(.semibold)
                         .frame(width: UIScreen.main.bounds.width - 48, height: 50)
-                        .background(Color.black)
+                        .background(colorScheme == .dark ? Color.white : Color.black)
                         .cornerRadius(25)
                 }
                 
