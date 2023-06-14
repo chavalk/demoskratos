@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CircleImage: View {
+    @Environment(\.colorScheme) var colorScheme
     var image: Image
     
     var body: some View {
@@ -17,7 +18,7 @@ struct CircleImage: View {
             .frame(width: 250, height: 250)
             .clipShape(Circle())
             .overlay {
-                Circle().stroke(.white, lineWidth: 4)
+                Circle().stroke(colorScheme == .dark ? .black : .white, lineWidth: 4)
             }
             .shadow(radius: 7)
     }
