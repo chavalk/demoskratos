@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CustomInputField: View {
+    @Environment(\.colorScheme) var colorScheme
     @Binding var text: String
     let title: String
     let placeholder: String
@@ -28,7 +29,7 @@ struct CustomInputField: View {
             }
             
             Rectangle()
-                .foregroundColor(Color(.init(white: 1, alpha: 0.3)))
+                .foregroundColor(colorScheme == .dark ? Color(.init(white: 1, alpha: 0.3)) : Color(uiColor: UIColor.lightGray))
                 .frame(width: UIScreen.main.bounds.width - 32, height: 0.7)
         }
     }
