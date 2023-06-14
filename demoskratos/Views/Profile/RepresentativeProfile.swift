@@ -25,7 +25,7 @@ struct RepresentativeProfile: View {
             
             Text("United States House Representative")
             
-            Text("District 21")
+            Text("District 21 - Texas")
                 .foregroundColor(.secondary)
             
             Divider()
