@@ -11,6 +11,7 @@ import FirebaseFirestoreSwift
 
 class Authentication: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var representative: Representative?
     
     init() {
         userSession = Auth.auth().currentUser
