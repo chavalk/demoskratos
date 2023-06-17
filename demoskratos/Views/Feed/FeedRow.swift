@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct FeedRow: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    
     var body: some View {
         VStack {
             HStack(alignment: .top) {
                 NavigationLink {
-                    RepresentativeProfile()
+                    if let representative = authViewModel.representative {
+                        RepresentativeProfile(representative: representative)
+                    }
+                    
                 } label: {
                     Image("us-house-tx-21")
                         .resizable()
