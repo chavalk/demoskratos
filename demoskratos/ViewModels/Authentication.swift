@@ -16,6 +16,7 @@ class Authentication: ObservableObject {
     init() {
         userSession = Auth.auth().currentUser
         fetchUser()
+        fetchRepresentative()
     }
     
     func signIn(withEmail email: String, password: String) {
