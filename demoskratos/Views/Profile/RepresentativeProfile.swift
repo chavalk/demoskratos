@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct RepresentativeProfile: View {
-    var image = Image("us-house-tx-21")
     private let representative: Representative
     
     init(representative: Representative) {
@@ -20,7 +19,7 @@ struct RepresentativeProfile: View {
             MapView()
                 .frame(height: 400)
             
-            CircleImage(image: image)
+            CircleImage(profileImageUrl: representative.profileImageUrl)
                 .offset(y: -130)
                 .padding(.bottom, -130)
             
