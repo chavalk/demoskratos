@@ -9,9 +9,10 @@ import SwiftUI
 
 struct CircleImage: View {
     @Environment(\.colorScheme) var colorScheme
+    var profileImageUrl: String
     
     var body: some View {
-        AsyncImage(url: URL(string: "https://firebasestorage.googleapis.com/v0/b/demoskratos-1160e.appspot.com/o/us-house-tx-21.png?alt=media&token=562aa2d7-39c8-489a-8084-3072dddd0fcd")) { image in
+        AsyncImage(url: URL(string: profileImageUrl)) { image in
             image
                 .resizable()
                 .aspectRatio(contentMode: .fill)
