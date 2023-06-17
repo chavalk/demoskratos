@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Feed: View {
-    @EnvironmentObject var authentication: Authentication
+    @EnvironmentObject var authentication: AuthViewModel
     
     var body: some View {
         NavigationStack {

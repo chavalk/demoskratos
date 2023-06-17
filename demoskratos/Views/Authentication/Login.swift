@@ -12,7 +12,7 @@ struct Login: View {
     @State var password = ""
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var authentication: Authentication
+    @EnvironmentObject var authentication: AuthViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {

@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
-class Authentication: ObservableObject {
+class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
     @Published var representative: Representative?
     
