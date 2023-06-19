@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Feed: View {
-    @EnvironmentObject var authentication: AuthViewModel
+    @EnvironmentObject var authViewModel: AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -21,7 +21,7 @@ struct Feed: View {
             .navigationTitle("Demoskratos")
             .toolbar {
                 Button {
-                    authentication.signOut()
+                    authViewModel.signOut()
                 } label: {
                     Image(systemName: "lasso")
                 }
