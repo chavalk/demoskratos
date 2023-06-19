@@ -9,14 +9,15 @@ import SwiftUI
 import Firebase
 
 struct FeedRow: View {
-    @EnvironmentObject var authViewModel: AuthViewModel
+//    @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var repProfileViewModel: RepProfileViewModel
     let vote: Vote
     
     var body: some View {
         VStack {
             HStack(alignment: .top) {
                 NavigationLink {
-                    if let representative = authViewModel.representative {
+                    if let representative = repProfileViewModel.representative {
                         RepresentativeProfile(representative: representative)
                     }
                     
