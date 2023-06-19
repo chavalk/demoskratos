@@ -14,10 +14,13 @@ struct Feed: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                FeedRow()
-                FeedRow()
-                FeedRow()
-                FeedRow()
+                ForEach(feedViewModel.votes) { vote in
+                    FeedRow()
+                }
+//                FeedRow()
+//                FeedRow()
+//                FeedRow()
+//                FeedRow()
             }
             .navigationTitle("Demoskratos")
             .toolbar {
