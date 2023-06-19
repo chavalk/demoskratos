@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Feed: View {
     @EnvironmentObject var authViewModel: AuthViewModel
+    @ObservedObject var feedViewModel = FeedViewModel()
     
     var body: some View {
         NavigationStack {
