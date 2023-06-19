@@ -5,8 +5,13 @@
 //  Created by Jose Garcia on 6/17/23.
 //
 
-import Foundation
+import Firebase
 
 struct Vote: Codable {
-    
+    let id: String
+    let name: String
+    let profileImageUrl: String
+    let text: String
+    let timestamp: Timestamp
+    let uid: String
 }
