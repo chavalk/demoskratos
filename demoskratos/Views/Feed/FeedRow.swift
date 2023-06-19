@@ -28,7 +28,9 @@ struct FeedRow: View {
                             .clipShape(Circle())
                             .frame(width: 56, height: 56)
                     } placeholder: {
-                        
+                        Circle()
+                            .frame(width: 56, height: 56)
+                            .foregroundColor(Color(uiColor: .lightGray))
                     }
                 }
                 
