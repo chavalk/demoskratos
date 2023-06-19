@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FeedRow: View {
     @EnvironmentObject var authViewModel: AuthViewModel
+    let vote: Vote
     
     var body: some View {
         VStack {
