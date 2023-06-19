@@ -17,10 +17,6 @@ struct Feed: View {
                 ForEach(feedViewModel.votes) { vote in
                     FeedRow(vote: vote)
                 }
-//                FeedRow()
-//                FeedRow()
-//                FeedRow()
-//                FeedRow()
             }
             .navigationTitle("Demoskratos")
             .toolbar {
