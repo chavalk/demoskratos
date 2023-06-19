@@ -15,7 +15,7 @@ struct Feed: View {
         NavigationStack {
             ScrollView {
                 ForEach(feedViewModel.votes) { vote in
-                    FeedRow()
+                    FeedRow(vote: vote)
                 }
 //                FeedRow()
 //                FeedRow()

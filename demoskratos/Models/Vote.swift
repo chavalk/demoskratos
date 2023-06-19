@@ -7,7 +7,7 @@
 
 import Firebase
 
-struct Vote: Codable {
+struct Vote: Codable, Identifiable {
     let id: String
     let name: String
     let profileImageUrl: String

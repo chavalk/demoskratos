@@ -20,11 +20,11 @@ struct FeedRow: View {
                     }
                     
                 } label: {
-                    Image("us-house-tx-21")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .clipShape(Circle())
-                        .frame(width: 56, height: 56)
+                    AsyncImage(url: URL(string: vote.profileImageUrl))
+//                    .resizable()
+//                    .aspectRatio(contentMode: .fill)
+//                    .clipShape(Circle())
+//                    .frame(width: 56, height: 56)
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {
@@ -37,21 +37,11 @@ struct FeedRow: View {
 //                            .foregroundColor(.secondary)
 //                    }
                     
-                    Text("Chip Roy")
+                        
+                    Text(vote.name)
                         .font(.headline)
                     
-                    Text("Your United States House Representative just voted ")
-                    
-                    + Text("No ")
-                        .bold()
-                        .foregroundColor(.red)
-                    
-                    + Text("on agreeing to ")
-                    
-                    + Text("House Resolution No. 463 ")
-                        .bold()
-                    
-                    + Text("providing for consideration of the bill (H.R. 277) REINS Act; providing for consideration of the bill (H.R. 288) Separation of Powers Restoration Act; providing for consideration of the bill (H.R. 1615) Gas Stove Protection and Freedom Act; and providing for consideration of the bill (H.R. 1640) Save Our Stoves Act.")
+                        Text(vote.text)
                     
                     FeedRowButtons()
                 }
@@ -64,8 +54,8 @@ struct FeedRow: View {
     }
 }
 
-struct FeedRow_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedRow()
-    }
-}
+//struct FeedRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FeedRow(vote: Vote(id: "123456", name: "Chip Roy", profileImageUrl: "https://firebasestorage.googleapis.com/v0/b/demoskratos-1160e.appspot.com/o/us-house-tx-21.png?alt=media&token=562aa2d7-39c8-489a-8084-3072dddd0fcd", text: "Your United States House Representative just voted Yes on passage of House Resolution No. 288, the Separation of Powers Restoration Act of 2023: To amend title 5, United States Code, to clarify the nature of judicial review of agency interpretations of statutory and regulatory provisions.", timestamp: , uid: "1234567"))
+//    }
+//}
