@@ -5,7 +5,7 @@
 //  Created by Jose Garcia on 6/19/23.
 //
 
-import Foundation
+import Firebase
 
 class RepProfileViewModel: ObservableObject {
     @Published var representative: Representative?
