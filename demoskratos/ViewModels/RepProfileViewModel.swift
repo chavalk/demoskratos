@@ -21,7 +21,6 @@ class RepProfileViewModel: ObservableObject {
             
             guard let representative = try? snapshot.data(as: Representative.self) else { return }
             
-            print("DEBUG: Representative is \(representative.name)")
             self.representative = representative
         }
     }
