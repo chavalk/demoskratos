@@ -1,15 +1,20 @@
 //
-//  Registration.swift
+//  RegistrationCredentials.swift
 //  demoskratos
 //
-//  Created by Jose Garcia on 6/4/23.
+//  Created by Jose Garcia on 9/12/23.
 //
 
 import SwiftUI
 
-struct Registration: View {
-    @State private var firstName = ""
-    @State private var lastName = ""
+struct RegistrationCredentials: View {
+    let firstName: String
+    let lastName: String
+    let streetAddress: String
+    let city: String
+    let state: String
+    @State private var email = ""
+    @State private var password = ""
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var authentication: AuthViewModel
@@ -25,7 +30,7 @@ struct Registration: View {
                     .foregroundColor(colorScheme == .dark ? .white : .black)
             }
             
-            Text("Add your name")
+            Text("Create your account")
                 .font(.system(size: 40))
                 .fontWeight(.semibold)
             
@@ -33,16 +38,15 @@ struct Registration: View {
             
             VStack(spacing: 40) {
                 VStack(spacing: 56) {
-                    CustomInputField(text: $firstName, title: "First Name", placeholder: "Enter your first name")
+                    CustomInputField(text: $email, title: "Email Address", placeholder: "Enter your email address")
                     
-                    CustomInputField(text: $lastName, title: "Last Name", placeholder: "Enter your last name")
+                    CustomInputField(text: $password, title: "Create Password", placeholder: "Enter your password", isSecureField: true)
                 }
                 
-                NavigationLink {
-                    RegistrationAddress(firstName: firstName, lastName: lastName)
-                        .navigationBarBackButtonHidden(true)
+                Button {
+                    authentication.registerUser(withEmail: email, password: password, firstName: firstName, lastName: lastName, streetAddress: streetAddress, city: city, state: state)
                 } label: {
-                    Text("Continue")
+                    Text("Sign up")
                         .foregroundColor(colorScheme == .dark ? .black : .white)
                         .fontWeight(.semibold)
                         .frame(width: UIScreen.main.bounds.width - 48, height: 50)
@@ -57,8 +61,8 @@ struct Registration: View {
     }
 }
 
-struct Registration_Previews: PreviewProvider {
+struct RegistrationCredentials_Previews: PreviewProvider {
     static var previews: some View {
-        Registration()
+        RegistrationCredentials(firstName: "Jose", lastName: "Garcia", streetAddress: "3022 Greenacres", city: "San Antonio", state: "Texas")
     }
 }

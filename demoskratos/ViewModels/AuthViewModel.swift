@@ -28,7 +28,7 @@ class AuthViewModel: ObservableObject {
         }
     }
     
-    func registerUser(withEmail email: String, password: String, fullName: String) {
+    func registerUser(withEmail email: String, password: String, firstName: String, lastName: String, streetAddress: String, city: String, state: String) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
                 print("DEBUG: Failed to sign up with error \(error.localizedDescription)")
@@ -37,11 +37,36 @@ class AuthViewModel: ObservableObject {
             
             guard let firebaseUser = result?.user else { return }
             self.userSession = firebaseUser
+
+            let streetAddressSubstrings = streetAddress.split(separator: " ")
+            var formattedStreetAddress = ""
+            for substring in streetAddressSubstrings {
+                formattedStreetAddress += substring + "%20"
+            }
+            let citySubstrings = city.split(separator: " ")
+            var formattedCity = ""
+            for substring in citySubstrings {
+                formattedCity += substring + "%20"
+            }
+
+            guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCn52jw43C-DqjxG7qowS3n2-vvaMlSvcU&address=\(formattedStreetAddress)\(formattedCity)\(state)") else { return }
             
-            let user = User(fullName: fullName, email: email, uid: firebaseUser.uid)
-            guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+            let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
+                guard let data = data, error == nil else { return }
+                
+                do {
+                    let officials = try JSONDecoder().decode(OfficialsResponse.self, from: data)
+                    guard let usHouseRepresentative = officials.officials[4].name else { return }
+                    let user = User(firstName: firstName, lastName: lastName, email: email, usHouseRepresentative: usHouseRepresentative, uid: firebaseUser.uid)
+                    guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
+                    
+                    Firestore.firestore().collection("users").document(firebaseUser.uid).setData(encodedUser)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
             
-            Firestore.firestore().collection("users").document(firebaseUser.uid).setData(encodedUser)
+            task.resume()
         }
     }
     

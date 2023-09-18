@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */; };
 		BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1BB2A3EA7D8007811B7 /* Vote.swift */; };
+		BE4141732AAEADFA00B51850 /* RegistrationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */; };
+		BE4141752AB15F6D00B51850 /* RegistrationCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */; };
+		BE4141772AB5446400B51850 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141762AB5446400B51850 /* Official.swift */; };
 		BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E13E32A1F1488005E2986 /* MapView.swift */; };
 		BE55AC192A3247FF00682547 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55AC182A3247FF00682547 /* User.swift */; };
 		BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BE24F1BB2A3EA7D8007811B7 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAddress.swift; sourceTree = "<group>"; };
+		BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCredentials.swift; sourceTree = "<group>"; };
+		BE4141762AB5446400B51850 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
 		BE4E13E32A1F1488005E2986 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BE55AC182A3247FF00682547 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeProfile.swift; sourceTree = "<group>"; };
@@ -141,6 +147,8 @@
 			children = (
 				BEFF09952A2B98E700A36FB3 /* Landing.swift */,
 				BEFF09972A2D903E00A36FB3 /* Registration.swift */,
+				BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */,
+				BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */,
 				BEBF28B22A2F80A700390E90 /* Login.swift */,
 			);
 			path = Authentication;
@@ -203,6 +211,7 @@
 				BE55AC182A3247FF00682547 /* User.swift */,
 				BE8439EF2A3D6DCD00258FBB /* Representative.swift */,
 				BE24F1BB2A3EA7D8007811B7 /* Vote.swift */,
+				BE4141762AB5446400B51850 /* Official.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -293,11 +302,13 @@
 				BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */,
 				BEFF09962A2B98E700A36FB3 /* Landing.swift in Sources */,
 				BE55AC192A3247FF00682547 /* User.swift in Sources */,
+				BE4141752AB15F6D00B51850 /* RegistrationCredentials.swift in Sources */,
 				BEFF09982A2D903E00A36FB3 /* Registration.swift in Sources */,
 				BE8439F02A3D6DCD00258FBB /* Representative.swift in Sources */,
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
+				BE4141732AAEADFA00B51850 /* RegistrationAddress.swift in Sources */,
 				BEBF28B32A2F80A700390E90 /* Login.swift in Sources */,
 				BEBF28C92A30196500390E90 /* AuthViewModel.swift in Sources */,
 				BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */,
@@ -305,6 +316,7 @@
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
 				BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */,
+				BE4141772AB5446400B51850 /* Official.swift in Sources */,
 				BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */,
 				BEAC1B5F2A254E1C00C8FBB2 /* RecentVotesRow.swift in Sources */,
 				BEFF099A2A2EDA7400A36FB3 /* CustomInputField.swift in Sources */,
