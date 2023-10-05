@@ -21,7 +21,7 @@ struct FeedRow: View {
                     }
                     
                 } label: {
-                    AsyncImage(url: URL(string: vote.profileImageUrl)) { image in
+                    AsyncImage(url: URL(string: repProfileViewModel.representative?.profileImageUrl ?? "")) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
@@ -44,10 +44,10 @@ struct FeedRow: View {
 //                            .foregroundColor(.secondary)
 //                    }
                     
-                    Text(vote.name)
+                    Text(repProfileViewModel.representative?.name ?? "")
                         .font(.headline)
                     
-                    Text(vote.text)
+                    Text(vote.billTitle)
                     
                     FeedRowButtons()
                 }
@@ -60,8 +60,8 @@ struct FeedRow: View {
     }
 }
 
-struct FeedRow_Previews: PreviewProvider {
-    static var previews: some View {
-        FeedRow(vote: Vote(id: "123456", name: "Chip Roy", profileImageUrl: "https://firebasestorage.googleapis.com/v0/b/demoskratos-1160e.appspot.com/o/us-house-tx-21.png?alt=media&token=562aa2d7-39c8-489a-8084-3072dddd0fcd", text: "Your United States House Representative just voted Yes on passage of House Resolution No. 288, the Separation of Powers Restoration Act of 2023: To amend title 5, United States Code, to clarify the nature of judicial review of agency interpretations of statutory and regulatory provisions.", timestamp: Timestamp(date: Date()), uid: "1234567"))
-    }
-}
+//struct FeedRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        FeedRow(vote: Vote(id: "123456", name: "Chip Roy", profileImageUrl: "https://firebasestorage.googleapis.com/v0/b/demoskratos-1160e.appspot.com/o/us-house-tx-21.png?alt=media&token=562aa2d7-39c8-489a-8084-3072dddd0fcd", text: "Your United States House Representative just voted Yes on passage of House Resolution No. 288, the Separation of Powers Restoration Act of 2023: To amend title 5, United States Code, to clarify the nature of judicial review of agency interpretations of statutory and regulatory provisions.", timestamp: Timestamp(date: Date()), uid: "1234567"))
+//    }
+//}
