@@ -38,7 +38,7 @@ struct RepresentativeProfile: View {
             HStack {
                 Text("Recent Votes")
                     .font(.title2)
-                .bold()
+                    .bold()
                 
                 Spacer()
             }
