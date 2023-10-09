@@ -25,6 +25,11 @@ struct ContentView: View {
                         .tabItem {
                             Label("My Candidates", systemImage: "person.2")
                         }
+                    
+                    Ballot()
+                        .tabItem {
+                            Label("My Ballot", systemImage: "doc.text")
+                        }
                 }
             }
         }
