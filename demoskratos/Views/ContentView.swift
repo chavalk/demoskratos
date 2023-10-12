@@ -26,6 +26,11 @@ struct ContentView: View {
                             Label("Search", systemImage: "magnifyingglass")
                         }
                     
+                    Meetings()
+                        .tabItem {
+                            Label("Meetings", systemImage: "video")
+                        }
+                    
                     Candidates()
                         .tabItem {
                             Label("My Candidates", systemImage: "person.2")
