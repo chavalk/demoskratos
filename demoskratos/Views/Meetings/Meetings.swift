@@ -11,7 +11,15 @@ struct Meetings: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                
+                HStack {
+                    Text("U.S. House of Representatives")
+                        .font(.title2)
+                        .bold()
+                    
+                    Spacer()
+                }
+                .padding(.leading)
+                .padding(.bottom)
             }
             .navigationTitle("Meetings")
         }
