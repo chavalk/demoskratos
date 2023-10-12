@@ -21,16 +21,6 @@ struct Ballot: View {
                 .padding(.leading)
                 .padding(.bottom)
                 
-//                HStack {
-//                    Text("Joint Constitutional Amendment, General, Special, Charter, and Bond Election")
-//                        .font(.title3)
-////                        .bold()
-//                    
-//                    Spacer()
-//                }
-//                .padding(.leading)
-//                .padding(.bottom)
-                
                 BallotRow()
                 BallotRow()
                 BallotRow()
