@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */; };
 		BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */; };
 		BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1BB2A3EA7D8007811B7 /* Vote.swift */; };
 		BE4141732AAEADFA00B51850 /* RegistrationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeBio.swift; sourceTree = "<group>"; };
 		BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BE24F1BB2A3EA7D8007811B7 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
 		BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAddress.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 			children = (
 				BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */,
 				BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */,
+				BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
+				BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */,
 				BEC9742B2A101F7300BFE62C /* FeedRowButtons.swift in Sources */,
 				BE4141772AB5446400B51850 /* Official.swift in Sources */,
 				BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */,
