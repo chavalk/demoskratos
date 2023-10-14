@@ -32,7 +32,12 @@ struct RepresentativeProfile: View {
             Text("District \(representative.district) - \(representative.state)")
                 .foregroundColor(.secondary)
             
-            Text("See full bio >")
+            NavigationLink {
+                
+            } label: {
+                Text("See full bio >")
+                    .foregroundStyle(.black)
+            }
             
             Divider()
                 .padding()
