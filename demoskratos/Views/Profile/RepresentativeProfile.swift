@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RepresentativeProfile: View {
+    @Environment(\.colorScheme) var colorScheme
     private let representative: Representative
     
     init(representative: Representative) {
@@ -36,7 +37,7 @@ struct RepresentativeProfile: View {
                 RepresentativeBio()
             } label: {
                 Text("See full bio >")
-                    .foregroundStyle(.black)
+                    .foregroundStyle(colorScheme == .dark ? .white : .black)
             }
             
             Divider()
