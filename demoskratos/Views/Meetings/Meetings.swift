@@ -73,7 +73,7 @@ struct Meetings: View {
                         Text("Next Meeting:")
                             .bold()
                         
-                        Text("Currently in session")
+                        Text("Wednesday Oct. 18, 2023 at 10:30 AM EDT")
                     }
                     
                     Spacer()
