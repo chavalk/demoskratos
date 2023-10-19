@@ -34,7 +34,7 @@ struct RepresentativeProfile: View {
                 .foregroundColor(.secondary)
             
             NavigationLink {
-                RepresentativeBio()
+                RepresentativeBio(representative: representative)
             } label: {
                 Text("See full bio >")
                     .foregroundStyle(colorScheme == .dark ? .white : .black)
