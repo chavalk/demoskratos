@@ -30,7 +30,7 @@ struct RepresentativeBio: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                         
-                        Text("4 years in power")
+                        Text("\(representative.yearsInPower) years in power")
                     }
                     .padding(.leading)
                     
@@ -39,7 +39,7 @@ struct RepresentativeBio: View {
                             .resizable()
                             .frame(width: 30, height: 30)
                         
-                        Text("$174,000 per year salary")
+                        Text("$\(representative.salary) per year salary")
                     }
                     .padding(.leading)
                     
@@ -49,9 +49,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Age 51 (Born August 7, 1972)")
+                            Text("Age \(representative.age) (Born \(representative.dateOfBirth))")
                             
-                            Text("Born in Bethesda, Maryland")
+                            Text("Born in \(representative.placeOfBirth)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -63,9 +63,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Currently resides in Austin, Texas")
+                            Text("Currently resides in \(representative.currentResidence)")
                             
-                            Text("Raised in Lovettsville, Virginia")
+                            Text("Raised in \(representative.raisedIn)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -77,7 +77,7 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Represents 807,859 people (Estimate)")
+                            Text("Represents \(representative.districtPopulation) people (Estimate)")
                         }
                     }
                     .padding(.leading)
@@ -102,9 +102,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Bachelor of Science in Commerce")
+                            Text("\(representative.educationFirst)")
                             
-                            Text("University of Virginia 1994")
+                            Text("\(representative.universityFirst)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -116,9 +116,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Master of Arts in Information Systems")
+                            Text("\(representative.educationSecond)")
                             
-                            Text("University of Virginia 1995")
+                            Text("\(representative.universitySecond)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -130,9 +130,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Juris Doctor")
+                            Text("\(representative.educationThird)")
                             
-                            Text("University of Texas 2003")
+                            Text("\(representative.universityThird)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -158,9 +158,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Investment Banking Analyst")
+                            Text("\(representative.professionalExpFirst)")
                             
-                            Text("NationsBank Capital Markets")
+                            Text("\(representative.employerFirst)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -172,9 +172,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Staff Director & Senior Counsel")
+                            Text("\(representative.professionalExpSecond)")
                             
-                            Text("Senator John Cornyn")
+                            Text("\(representative.employerSecond)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -186,9 +186,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Special Assistant")
+                            Text("\(representative.professionalExpThird)")
                             
-                            Text("U.S. Attorney - Eastern District in Texas")
+                            Text("\(representative.employerThird)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -200,9 +200,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("Chief of Staff")
+                            Text("\(representative.professionalExpFourth)")
                             
-                            Text("Senator Ted Cruz")
+                            Text("\(representative.employerFourth)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -214,9 +214,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("First Assistant")
+                            Text("\(representative.professionalExpFifth)")
                             
-                            Text("Attorney General of Texas")
+                            Text("\(representative.employerFifth)")
                                 .foregroundColor(.secondary)
                         }
                     }
@@ -228,9 +228,9 @@ struct RepresentativeBio: View {
                             .frame(width: 30, height: 30)
                         
                         VStack(alignment: .leading) {
-                            Text("United States Representative")
+                            Text("\(representative.professionalExpSixth)")
                             
-                            Text("United States House of Representatives")
+                            Text("\(representative.employerSixth)")
                                 .foregroundColor(.secondary)
                         }
                     }
