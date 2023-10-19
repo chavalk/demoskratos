@@ -158,6 +158,9 @@ struct RepresentativeBio: View {
                         
                         VStack(alignment: .leading) {
                             Text("Investment Banking Analyst")
+                            
+                            Text("NationsBank Capital Markets")
+                                .foregroundColor(.secondary)
                         }
                     }
                     .padding(.leading)
