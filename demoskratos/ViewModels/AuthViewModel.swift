@@ -82,7 +82,7 @@ class AuthViewModel: ObservableObject {
     func fetchUser() {
         guard let uid = self.userSession?.uid else { return }
         Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
-            guard let snapshot = snapshot else { return }
+//            guard let snapshot = snapshot else { return }
             
 //            guard let user = try? snapshot.data(as: User.self) else { return }
         }
