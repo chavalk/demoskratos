@@ -70,6 +70,17 @@ struct RepresentativeBio: View {
                     }
                     .padding(.leading)
                     
+                    HStack(spacing: 15) {
+                        Image(systemName: "person.fill")
+                            .resizable()
+                            .frame(width: 30, height: 30)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Represents 807,859 people (Estimate)")
+                        }
+                    }
+                    .padding(.leading)
+                    
                     Divider()
                 }
                 
