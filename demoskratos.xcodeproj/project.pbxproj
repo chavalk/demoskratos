@@ -16,6 +16,7 @@
 		BE4DF56B2AD378CB00A1048F /* Ballot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4DF56A2AD378CB00A1048F /* Ballot.swift */; };
 		BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E13E32A1F1488005E2986 /* MapView.swift */; };
 		BE55AC192A3247FF00682547 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55AC182A3247FF00682547 /* User.swift */; };
+		BE5F19EA2AE3653E009ABBF1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */; };
 		BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */; };
 		BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2C2A22577600AA9D4C /* CircleImage.swift */; };
 		BE7655BE2AD5DE7300CFCD95 /* BallotRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7655BD2AD5DE7300CFCD95 /* BallotRow.swift */; };
@@ -55,6 +56,7 @@
 		BE4DF56A2AD378CB00A1048F /* Ballot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ballot.swift; sourceTree = "<group>"; };
 		BE4E13E32A1F1488005E2986 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		BE55AC182A3247FF00682547 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeProfile.swift; sourceTree = "<group>"; };
 		BE694D2C2A22577600AA9D4C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BE7655BD2AD5DE7300CFCD95 /* BallotRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallotRow.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				BEBF28C82A30196500390E90 /* AuthViewModel.swift */,
 				BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */,
 				BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */,
+				BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				BEBF28C92A30196500390E90 /* AuthViewModel.swift in Sources */,
 				BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */,
 				BE7655BE2AD5DE7300CFCD95 /* BallotRow.swift in Sources */,
+				BE5F19EA2AE3653E009ABBF1 /* SearchViewModel.swift in Sources */,
 				BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
