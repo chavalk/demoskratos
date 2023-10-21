@@ -27,10 +27,6 @@ struct Feed: View {
                 }
 
             }
-//            .toolbarBackground(Color.pink, for: .navigationBar)
-//            .toolbarBackground(.visible, for: .navigationBar)
-//            .navigationBarTitleDisplayMode(.inline)
-//            .background(Color(uiColor: UIColor(white: 0.95, alpha: 1)))
         }
     }
 }
