@@ -25,7 +25,7 @@ struct Search: View {
         }
         .onChange(of: searchText, perform: { searchText in
             searchViewModel.searchResults = searchViewModel.representatives.filter({ representative in
-                representative.name.contains(searchText)
+                representative.name.lowercased().contains(searchText.lowercased())
             })
         })
     }
