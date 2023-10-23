@@ -12,11 +12,17 @@ struct RepresentativeCell: View {
     
     var body: some View {
         HStack {
-            Image("us-house-tx-21")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .clipShape(Circle())
-                .frame(width: 56, height: 56)
+            AsyncImage(url: URL(string: representative.profileImageUrl)) { image in
+                image
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .clipShape(Circle())
+                    .frame(width: 56, height: 56)
+            } placeholder: {
+                Circle()
+                    .frame(width: 56, height: 56)
+                    .foregroundColor(Color(uiColor: .lightGray))
+            }
             
             VStack(alignment: .leading, spacing: 4) {
                 Text(representative.name)
