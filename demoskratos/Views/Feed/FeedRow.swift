@@ -35,15 +35,6 @@ struct FeedRow: View {
                 }
                 
                 VStack(alignment: .leading, spacing: 8) {
-//                    VStack(alignment: .leading, spacing: 3) {
-//                        Text("Diego M. Bernal")
-//                            .font(.headline)
-//
-//                        Text("05/17/2023")
-//                            .font(.subheadline)
-//                            .foregroundColor(.secondary)
-//                    }
-                    
                     Text(repProfileViewModel.representative?.name ?? "")
                         .font(.headline)
                     
@@ -56,7 +47,6 @@ struct FeedRow: View {
             Divider()
         }
         .padding(.horizontal)
-//        .background(Color.white)
     }
 }
 
