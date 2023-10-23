@@ -18,7 +18,16 @@ struct Search: View {
             }
             .navigationTitle("Search")
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "U.S. House Representatives")
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "U.S. House Representatives") {
+            ForEach(searchViewModel.searchResults) { representative in
+                RepresentativeCell(representative: representative)
+            }
+        }
+        .onChange(of: searchText, perform: { searchText in
+            searchViewModel.searchResults = searchViewModel.representatives.filter({ representative in
+                representative.name.contains(searchText)
+            })
+        })
     }
 }
 

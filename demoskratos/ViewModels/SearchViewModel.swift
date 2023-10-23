@@ -9,6 +9,7 @@ import Firebase
 
 class SearchViewModel: ObservableObject {
     @Published var representatives = [Representative]()
+    @Published var searchResults = [Representative]()
     
     init() {
         fetchRepresentatives()

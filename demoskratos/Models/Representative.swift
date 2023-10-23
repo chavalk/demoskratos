@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Representative: Codable {
+struct Representative: Codable, Identifiable {
     let age: Int
     let currentResidence: String
     let dateOfBirth: String
@@ -22,6 +22,7 @@ struct Representative: Codable {
     let employerSecond: String
     let employerSixth: String
     let employerThird: String
+    let id: String
     let name: String
     let officeName: String
     let placeOfBirth: String
@@ -35,7 +36,6 @@ struct Representative: Codable {
     let raisedIn: String
     let salary: String
     let state: String
-    let uid: String
     let universityFirst: String
     let universitySecond: String
     let universityThird: String
