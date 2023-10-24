@@ -14,15 +14,17 @@ struct Search: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                
+                ForEach(searchViewModel.searchResults) { representative in
+                    NavigationLink {
+                        RepresentativeProfile(representative: representative)
+                    } label: {
+                        RepresentativeCell(representative: representative)
+                    }
+                }
             }
             .navigationTitle("Search")
         }
-        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "U.S. House Representatives") {
-            ForEach(searchViewModel.searchResults) { representative in
-                RepresentativeCell(representative: representative)
-            }
-        }
+        .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "U.S. House Representatives")
         .onChange(of: searchText, perform: { searchText in
             searchViewModel.searchResults = searchViewModel.representatives.filter({ representative in
                 representative.name.lowercased().contains(searchText.lowercased())
