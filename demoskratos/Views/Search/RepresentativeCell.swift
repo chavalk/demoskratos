@@ -11,26 +11,34 @@ struct RepresentativeCell: View {
     let representative: Representative
     
     var body: some View {
-        HStack {
-            AsyncImage(url: URL(string: representative.profileImageUrl)) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .clipShape(Circle())
-                    .frame(width: 56, height: 56)
-            } placeholder: {
-                Circle()
-                    .frame(width: 56, height: 56)
-                    .foregroundColor(Color(uiColor: .lightGray))
-            }
-            
-            VStack(alignment: .leading, spacing: 4) {
-                Text(representative.name)
-                    .font(.headline)
+        VStack {
+            HStack {
+                AsyncImage(url: URL(string: representative.profileImageUrl)) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .clipShape(Circle())
+                        .frame(width: 56, height: 56)
+                } placeholder: {
+                    Circle()
+                        .frame(width: 56, height: 56)
+                        .foregroundColor(Color(uiColor: .lightGray))
+                }
                 
-                Text("\(representative.officeName)")
-                    .foregroundStyle(.secondary)
+                VStack(alignment: .leading, spacing: 4) {
+                    Text(representative.name)
+                        .font(.headline)
+                        .foregroundStyle(.black)
+                    
+                    Text("\(representative.officeName)")
+                        .foregroundStyle(.gray)
+                }
+                
+                Spacer()
             }
+            .padding()
+            
+            Divider()
         }
     }
 }
