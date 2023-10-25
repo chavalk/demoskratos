@@ -68,6 +68,11 @@ struct RepresentativeProfile: View {
                         .font(.title)
                         .imageScale(.small)
                         .foregroundColor(colorScheme == .dark ? .white : .black)
+                        .background(
+                            Circle()
+                                .fill(Color.white)
+                                .frame(width:40, height: 40)
+                        )
                 }
             }
         }
