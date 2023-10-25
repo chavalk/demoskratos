@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RepresentativeProfile: View {
+    @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
     private let representative: Representative
     
@@ -57,6 +58,19 @@ struct RepresentativeProfile: View {
             RecentVotesRow()
         }
         .ignoresSafeArea(edges: .top)
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image(systemName: "chevron.left")
+                        .font(.title)
+                        .imageScale(.small)
+                        .foregroundColor(colorScheme == .dark ? .white : .black)
+                }
+            }
+        }
     }
 }
 
