@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RepresentativeCell: View {
+    @Environment(\.colorScheme) var colorScheme
     let representative: Representative
     
     var body: some View {
@@ -28,7 +29,7 @@ struct RepresentativeCell: View {
                 VStack(alignment: .leading, spacing: 4) {
                     Text(representative.name)
                         .font(.headline)
-                        .foregroundStyle(.black)
+                        .foregroundStyle(colorScheme == .dark ? .white : .black)
                     
                     Text("\(representative.officeName)")
                         .foregroundStyle(.gray)
