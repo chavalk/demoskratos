@@ -7,15 +7,6 @@
 
 import Firebase
 
-//struct Vote: Codable, Identifiable {
-//    let id: String
-//    let name: String
-//    let profileImageUrl: String
-//    let text: String
-//    let timestamp: Timestamp
-//    let uid: String
-//}
-
 struct Vote: Codable, Identifiable {
     let id: String
     let bill: String
