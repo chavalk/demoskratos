@@ -42,6 +42,8 @@ struct FeedRow: View {
                     
                     FeedRowButtons()
                 }
+                
+                Spacer()
             }
             
             Divider()
