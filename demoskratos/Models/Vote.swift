@@ -16,4 +16,5 @@ struct Vote: Codable, Identifiable {
     let question: String
     let time: String
     let yesVotes: [String]
+    let rollCallNumber: Int
 }

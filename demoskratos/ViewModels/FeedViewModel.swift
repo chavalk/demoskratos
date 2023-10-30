@@ -32,7 +32,7 @@ class FeedViewModel: ObservableObject {
     }
     
     func fetchVotes() {
-        Firestore.firestore().collection("votes").getDocuments { snapshot, _ in
+        Firestore.firestore().collection("votes").order(by: "rollCallNumber", descending: true).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
             let votes = documents.compactMap({ try? $0.data(as: Vote.self) })
             self.votes = votes
