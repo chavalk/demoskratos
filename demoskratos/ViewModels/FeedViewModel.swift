@@ -32,11 +32,12 @@ class FeedViewModel: ObservableObject {
     }
     
     func fetchVotes() {
-        Firestore.firestore().collection("votes").order(by: "rollCallNumber", descending: true).getDocuments { snapshot, _ in
+        Firestore.firestore().collection("votes").getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }
-            let votes = documents.compactMap({ try? $0.data(as: Vote.self) })
-            self.votes = votes
-            print(self.votes.count)
+            let votes = documents.compactMap({ try? $0.data(as: Votes.self) })
+            for index in votes.indices.reversed() {
+                self.votes.append(contentsOf: votes[index].votes)
+            }
             for index in 0..<self.votes.count {
                 let vote = self.votes[index]
                 
