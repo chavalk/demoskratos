@@ -10,41 +10,57 @@ import Firebase
 
 struct FeedRow: View {
     @ObservedObject var repProfileViewModel = RepProfileViewModel()
-    let vote: Vote
+//    let vote: Vote
+    let activity : Activity
     
     var body: some View {
-        VStack {
-            HStack(alignment: .top) {
-                NavigationLink {
-                    if let representative = repProfileViewModel.representative {
-                        RepresentativeProfile(representative: representative)
-                    }
-                    
-                } label: {
-                    AsyncImage(url: URL(string: repProfileViewModel.representative?.profileImageUrl ?? "")) { image in
-                        image
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .clipShape(Circle())
-                            .frame(width: 56, height: 56)
-                    } placeholder: {
-                        Circle()
-                            .frame(width: 56, height: 56)
-                            .foregroundColor(Color(uiColor: .lightGray))
-                    }
-                }
+//        VStack {
+//            HStack(alignment: .top) {
+//                NavigationLink {
+//                    if let representative = repProfileViewModel.representative {
+//                        RepresentativeProfile(representative: representative)
+//                    }
+//                    
+//                } label: {
+//                    AsyncImage(url: URL(string: repProfileViewModel.representative?.profileImageUrl ?? "")) { image in
+//                        image
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fit)
+//                            .clipShape(Circle())
+//                            .frame(width: 56, height: 56)
+//                    } placeholder: {
+//                        Circle()
+//                            .frame(width: 56, height: 56)
+//                            .foregroundColor(Color(uiColor: .lightGray))
+//                    }
+//                }
+//                
+//                VStack(alignment: .leading, spacing: 8) {
+//                    Text(repProfileViewModel.representative?.name ?? "")
+//                        .font(.headline)
+//                    
+//                    Text(vote.billTitle)
+//                    
+//                    FeedRowButtons()
+//                }
+//                
+//                Spacer()
+//            }
+//            
+//            Divider()
+//        }
+//        .padding(.horizontal)
+        
+        VStack(alignment: .leading, spacing: 12) {
+            HStack {
+                Image(systemName: "clock")
                 
-                VStack(alignment: .leading, spacing: 8) {
-                    Text(repProfileViewModel.representative?.name ?? "")
-                        .font(.headline)
-                    
-                    Text(vote.billTitle)
-                    
-                    FeedRowButtons()
-                }
-                
-                Spacer()
+                Text(activity.floorTime)
             }
+            .padding(.top)
+            
+            Text(activity.floorActivity)
+                .padding(.bottom)
             
             Divider()
         }

@@ -14,8 +14,8 @@ struct Feed: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                ForEach(feedViewModel.votes) { vote in
-                    FeedRow(vote: vote)
+                ForEach(feedViewModel.activities) { activity in
+                    FeedRow(activity: activity)
                 }
             }
             .navigationTitle("Demoskratos")

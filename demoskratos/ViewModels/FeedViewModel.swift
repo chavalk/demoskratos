@@ -10,6 +10,7 @@ import SwiftUI
 
 class FeedViewModel: ObservableObject {
     @Published var votes = [Vote]()
+    @Published var activities = [Activity]()
     var userSession: FirebaseAuth.User?
     var user: User?
     
@@ -28,6 +29,7 @@ class FeedViewModel: ObservableObject {
             self.user = user
             
             self.fetchVotes()
+            self.fetchActivity()
         }
     }
     
@@ -57,5 +59,11 @@ class FeedViewModel: ObservableObject {
         }
     }
     
-    
+    func fetchActivity() {
+        Firestore.firestore().collection("activity").getDocuments { snapshot, _ in
+            guard let documents = snapshot?.documents else { return }
+            let activities = documents.compactMap({ try? $0.data(as: Activities.self) })
+            self.activities = activities[0].activity
+        }
+    }
 }
