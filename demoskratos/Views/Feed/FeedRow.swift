@@ -54,13 +54,16 @@ struct FeedRow: View {
         VStack(alignment: .leading, spacing: 12) {
             HStack {
                 Image(systemName: "clock")
+                    .font(.system(size: 14))
                 
                 Text(activity.floorTime)
+                    .font(.system(size: 14))
             }
-            .padding(.top)
+            .padding(.top, 5)
             
             Text(activity.floorActivity)
-                .padding(.bottom)
+                .font(.system(size: 14))
+                .padding(.bottom, 5)
             
             Divider()
         }
