@@ -19,14 +19,14 @@ struct Feed: View {
                 }
             }
             .navigationTitle("Demoskratos")
-            .toolbar {
-                Button {
-                    authViewModel.signOut()
-                } label: {
-                    Image(systemName: "lasso")
-                }
-
-            }
+//            .toolbar {
+//                Button {
+//                    authViewModel.signOut()
+//                } label: {
+//                    Image(systemName: "lasso")
+//                }
+//
+//            }
         }
     }
 }
