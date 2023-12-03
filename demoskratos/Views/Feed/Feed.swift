@@ -13,20 +13,10 @@ struct Feed: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ForEach(feedViewModel.activities) { activity in
-                    FeedRow(activity: activity)
-                }
+            List(feedViewModel.activities) { activity in
+                FeedRow(activity: activity)
             }
-            .navigationTitle("Demoskratos")
-//            .toolbar {
-//                Button {
-//                    authViewModel.signOut()
-//                } label: {
-//                    Image(systemName: "lasso")
-//                }
-//
-//            }
+            .navigationTitle("House Activity")
         }
     }
 }
