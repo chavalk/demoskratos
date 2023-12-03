@@ -16,7 +16,7 @@ struct Feed: View {
             List(feedViewModel.activities) { activity in
                 FeedRow(activity: activity)
             }
-            .navigationTitle("House Activity")
+            .navigationTitle("Floor Activity")
         }
     }
 }

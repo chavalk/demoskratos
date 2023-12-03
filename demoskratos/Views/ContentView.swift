@@ -18,7 +18,7 @@ struct ContentView: View {
                 TabView {
                     Feed()
                         .tabItem {
-                            Label("My Reps", systemImage: "person")
+                            Label("U.S. House", systemImage: "building.columns")
                         }
                     
                     Search()
