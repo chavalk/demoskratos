@@ -16,6 +16,7 @@ struct Feed: View {
                 FeedRow(activity: activity)
             }
             .navigationTitle("Floor Activity")
+            .scrollIndicators(.hidden)
         }
     }
 }
