@@ -17,6 +17,9 @@ struct Feed: View {
             }
             .navigationTitle("Floor Activity")
             .scrollIndicators(.hidden)
+            .refreshable {
+                feedViewModel.fetchActivity()
+            }
         }
     }
 }
