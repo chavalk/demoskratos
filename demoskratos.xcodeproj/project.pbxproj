@@ -26,6 +26,7 @@
 		BE7655C42AD7A69900CFCD95 /* Meetings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7655C32AD7A69900CFCD95 /* Meetings.swift */; };
 		BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7F83CE2A2843AB002D1AD0 /* Candidates.swift */; };
 		BE8439F02A3D6DCD00258FBB /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8439EF2A3D6DCD00258FBB /* Representative.swift */; };
+		BE850EA52B2EC4F600CB63E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */; };
 		BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */; };
 		BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */; };
 		BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */; };
@@ -35,7 +36,6 @@
 		BEA9ABDF2B04581D00AD5306 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA9ABDE2B04581D00AD5306 /* Activity.swift */; };
 		BEAC1B5F2A254E1C00C8FBB2 /* RecentVotesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */; };
 		BEBF28B32A2F80A700390E90 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEBF28B22A2F80A700390E90 /* Login.swift */; };
-		BEBF28BD2A2FD02800390E90 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */; };
 		BEBF28C02A2FD3EE00390E90 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28BF2A2FD3EE00390E90 /* FirebaseAuth */; };
 		BEBF28C22A2FD3EE00390E90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28C12A2FD3EE00390E90 /* FirebaseFirestore */; };
 		BEBF28C42A2FD3EE00390E90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BEBF28C32A2FD3EE00390E90 /* FirebaseFirestoreSwift */; };
@@ -70,6 +70,7 @@
 		BE7655C32AD7A69900CFCD95 /* Meetings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meetings.swift; sourceTree = "<group>"; };
 		BE7F83CE2A2843AB002D1AD0 /* Candidates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candidates.swift; sourceTree = "<group>"; };
 		BE8439EF2A3D6DCD00258FBB /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepProfileViewModel.swift; sourceTree = "<group>"; };
 		BE9F5C5229F9C3BB00E57EDE /* demoskratos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demoskratos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoskratosApp.swift; sourceTree = "<group>"; };
@@ -80,7 +81,6 @@
 		BEA9ABDE2B04581D00AD5306 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentVotesRow.swift; sourceTree = "<group>"; };
 		BEBF28B22A2F80A700390E90 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
-		BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BEBF28C82A30196500390E90 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		BEC974242A0F1A0B00BFE62C /* FeedRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedRow.swift; sourceTree = "<group>"; };
 		BEC974282A0FFA5700BFE62C /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
@@ -174,7 +174,7 @@
 				BEBF28C72A3018DE00390E90 /* ViewModels */,
 				BEC974322A1AE1D800BFE62C /* Models */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
-				BEBF28BC2A2FD02800390E90 /* GoogleService-Info.plist */,
+				BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */,
 				BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */,
 				BE9F5C5B29F9C3BD00E57EDE /* Preview Content */,
 			);
@@ -304,7 +304,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					BE9F5C5129F9C3BB00E57EDE = {
 						CreatedOnToolsVersion = 14.3;
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9F5C5D29F9C3BD00E57EDE /* Preview Assets.xcassets in Resources */,
-				BEBF28BD2A2FD02800390E90 /* GoogleService-Info.plist in Resources */,
+				BE850EA52B2EC4F600CB63E8 /* GoogleService-Info.plist in Resources */,
 				BE9F5C5A29F9C3BD00E57EDE /* Assets.xcassets in Resources */,
 				BEC9742E2A1AB4A900BFE62C /* map.json in Resources */,
 			);
@@ -517,6 +517,7 @@
 				DEVELOPMENT_TEAM = 324Y82FCZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Demoskratos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -527,7 +528,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.demoskratos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.Demoskratos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -546,6 +547,7 @@
 				DEVELOPMENT_TEAM = 324Y82FCZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Demoskratos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -556,7 +558,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.demoskratos;
+				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.Demoskratos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
