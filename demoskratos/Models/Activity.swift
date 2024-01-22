@@ -12,4 +12,5 @@ struct Activity: Codable, Identifiable {
     let floorActivity: String
     let floorBill: String
     let floorTime: String
+    let date: String
 }
