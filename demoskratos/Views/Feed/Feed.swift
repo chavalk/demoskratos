@@ -16,6 +16,16 @@ struct Feed: View {
                 FeedRow(activity: activity)
             }
             .navigationTitle("Floor Activity")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        
+                    } label: {
+                        Image(systemName: "play.circle.fill")
+                            .font(.system(size: 25))
+                    }
+                }
+            }
             .scrollIndicators(.hidden)
             .refreshable {
                 feedViewModel.fetchActivity()
