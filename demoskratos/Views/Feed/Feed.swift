@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Feed: View {
     @ObservedObject var feedViewModel = FeedViewModel()
+    @State var isShowingLiveView = false
     
     var body: some View {
         NavigationStack {
@@ -19,11 +20,14 @@ struct Feed: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        
+                        self.isShowingLiveView.toggle()
                     } label: {
                         Image(systemName: "play.circle.fill")
                             .font(.system(size: 25))
                     }
+                    .fullScreenCover(isPresented: $isShowingLiveView, content: {
+                        Text("Hello")
+                    })
                 }
             }
             .scrollIndicators(.hidden)
