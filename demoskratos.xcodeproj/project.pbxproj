@@ -11,6 +11,7 @@
 		BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */; };
 		BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */; };
 		BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1BB2A3EA7D8007811B7 /* Vote.swift */; };
+		BE3E3CD22B857859008E9D3C /* WatchLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */; };
 		BE4141732AAEADFA00B51850 /* RegistrationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */; };
 		BE4141752AB15F6D00B51850 /* RegistrationCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */; };
 		BE4141772AB5446400B51850 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141762AB5446400B51850 /* Official.swift */; };
@@ -55,6 +56,7 @@
 		BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeBio.swift; sourceTree = "<group>"; };
 		BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BE24F1BB2A3EA7D8007811B7 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
+		BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLiveView.swift; sourceTree = "<group>"; };
 		BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAddress.swift; sourceTree = "<group>"; };
 		BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCredentials.swift; sourceTree = "<group>"; };
 		BE4141762AB5446400B51850 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
@@ -106,6 +108,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE3E3CD02B85782E008E9D3C /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		BE4DF5692AD3789B00A1048F /* Ballot */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +233,7 @@
 				BE7F83CD2A28433D002D1AD0 /* Candidates */,
 				BE4DF5692AD3789B00A1048F /* Ballot */,
 				BE694D292A2194AC00AA9D4C /* Profile */,
+				BE3E3CD02B85782E008E9D3C /* Video */,
 				BEC9742F2A1ADF7900BFE62C /* Helpers */,
 			);
 			path = Views;
@@ -373,6 +384,7 @@
 				BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */,
 				BE7655BE2AD5DE7300CFCD95 /* BallotRow.swift in Sources */,
 				BE5F19EA2AE3653E009ABBF1 /* SearchViewModel.swift in Sources */,
+				BE3E3CD22B857859008E9D3C /* WatchLiveView.swift in Sources */,
 				BE7F83CF2A2843AB002D1AD0 /* Candidates.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,

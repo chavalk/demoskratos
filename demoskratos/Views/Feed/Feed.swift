@@ -26,7 +26,7 @@ struct Feed: View {
                             .font(.system(size: 25))
                     }
                     .fullScreenCover(isPresented: $isShowingLiveView, content: {
-                        Text("Hello")
+                        WatchLiveView()
                     })
                 }
             }
