@@ -9,6 +9,7 @@ import SwiftUI
 
 struct WatchLiveView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationStack {
@@ -19,7 +20,7 @@ struct WatchLiveView: View {
                             dismiss()
                         } label: {
                             Image(systemName: "xmark")
-                                .foregroundStyle(Color(uiColor: .white))
+                                .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
                         }
                     }
                 }
