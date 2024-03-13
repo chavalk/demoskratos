@@ -16,7 +16,7 @@ struct WatchLiveView: View {
             VStack {
                 WebView(videoID: "9GA6hBK8xK8?si=rcpIIVy69MqZBlWu")
                     .frame(height: 200)
-                    .padding(.horizontal)
+                    .padding(.horizontal, 1)
                     .toolbar {
                         ToolbarItem(placement: .topBarTrailing) {
                             Button {
