@@ -13,7 +13,7 @@ struct WebView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> WKWebView {
         let webView = WKWebView()
-        if let url = URL(string: "https://www.youtube.com/embed/9GA6hBK8xK8?si=rcpIIVy69MqZBlWu") {
+        if let url = URL(string: "https://www.youtube.com/embed/\(videoID)") {
             let request = URLRequest(url: url)
             webView.load(request)
         }
