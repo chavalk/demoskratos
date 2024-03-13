@@ -14,7 +14,8 @@ struct WatchLiveView: View {
     var body: some View {
         NavigationStack {
             WebView(videoID: "9GA6hBK8xK8?si=rcpIIVy69MqZBlWu")
-                .frame(width: 300, height: 200)
+                .frame(height: 200)
+                .padding(.horizontal)
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {
