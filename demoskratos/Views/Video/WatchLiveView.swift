@@ -23,7 +23,7 @@ struct WatchLiveView: View {
                                 dismiss()
                             } label: {
                                 Image(systemName: "xmark")
-                                    .foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
+                                    .foregroundStyle(Color.white)
                             }
                         }
                 }
