@@ -10,24 +10,9 @@ import SwiftUI
 
 class FeedViewModel: ObservableObject {
     @Published var activities = [Activity]()
-    var userSession: FirebaseAuth.User?
-    var user: User?
     
     init() {
-        userSession = Auth.auth().currentUser
-        fetchUser()
-    }
-    
-    func fetchUser() {
-        guard let uid = self.userSession?.uid else { return }
-        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _ in
-            guard let snapshot = snapshot else { return }
-            
-            guard let user = try? snapshot.data(as: User.self) else { return }
-            self.user = user
-            
-            self.fetchActivity()
-        }
+        fetchActivity()
     }
     
     func fetchActivity() {
