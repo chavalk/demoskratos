@@ -13,8 +13,10 @@ struct Feed: View {
     
     var body: some View {
         NavigationStack {
-            List(viewModel.activities) { activity in
-                FeedRow(activity: activity)
+            List {
+                ForEach(viewModel.activities) { activity in
+                    FeedRow(activity: activity)
+                }
             }
             .navigationTitle("Floor Activity")
             .toolbar {
