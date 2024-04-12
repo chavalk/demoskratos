@@ -15,7 +15,7 @@ class FeedViewModel: ObservableObject {
     func fetchActivity() {
         db.collection("activity")
             .order(by: "timestamp", descending: true)
-            .limit(to: 30)
+            .limit(to: 10)
             .addSnapshotListener({ snapshot, _ in
                 guard let documents = snapshot?.documents else { return }
                 let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
