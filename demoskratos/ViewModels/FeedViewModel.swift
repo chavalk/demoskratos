@@ -11,10 +11,6 @@ import SwiftUI
 class FeedViewModel: ObservableObject {
     @Published var activities = [Activity]()
     
-    init() {
-        fetchActivity()
-    }
-    
     func fetchActivity() {
         Firestore.firestore().collection("activity").order(by: "timestamp", descending: true).getDocuments { snapshot, _ in
             guard let documents = snapshot?.documents else { return }

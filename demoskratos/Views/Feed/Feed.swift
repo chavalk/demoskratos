@@ -18,6 +18,9 @@ struct Feed: View {
                     FeedRow(activity: activity)
                 }
             }
+            .onAppear() {
+                self.viewModel.fetchActivity()
+            }
             .navigationTitle("Floor Activity")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
