@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct Feed: View {
-    @ObservedObject var feedViewModel = FeedViewModel()
+    @ObservedObject var viewModel = FeedViewModel()
     @State var isShowingLiveView = false
     
     var body: some View {
         NavigationStack {
-            List(feedViewModel.activities) { activity in
+            List(viewModel.activities) { activity in
                 FeedRow(activity: activity)
             }
             .navigationTitle("Floor Activity")
@@ -32,7 +32,7 @@ struct Feed: View {
             }
             .scrollIndicators(.hidden)
             .refreshable {
-                feedViewModel.fetchActivity()
+                viewModel.fetchActivity()
             }
         }
     }
