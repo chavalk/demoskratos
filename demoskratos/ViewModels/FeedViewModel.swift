@@ -6,7 +6,6 @@
 //
 
 import Firebase
-import SwiftUI
 
 class FeedViewModel: ObservableObject {
     @Published var activities = [Activity]()
