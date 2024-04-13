@@ -16,6 +16,13 @@ struct Feed: View {
             List {
                 ForEach(viewModel.activities) { activity in
                     FeedRow(activity: activity)
+                    
+                    if activity == viewModel.activities.last {
+                        ProgressView()
+                            .onAppear {
+                                viewModel.fetchActivity()
+                            }
+                    }
                 }
             }
             .onAppear() {

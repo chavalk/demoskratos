@@ -9,17 +9,34 @@ import Firebase
 
 class FeedViewModel: ObservableObject {
     @Published var activities = [Activity]()
+    private var lastDocument: DocumentSnapshot? = nil
     
     private var db = Firestore.firestore()
     
     func fetchActivity() {
-        db.collection("activity")
-            .order(by: "timestamp", descending: true)
-            .limit(to: 10)
-            .addSnapshotListener({ snapshot, _ in
-                guard let documents = snapshot?.documents else { return }
-                let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
-                self.activities = activities
-            })
+        if let lastDocument {
+            db.collection("activity")
+                .order(by: "timestamp", descending: true)
+                .limit(to: 10)
+                .start(afterDocument: lastDocument)
+                .addSnapshotListener({ snapshot, _ in
+                    guard let documents = snapshot?.documents else { return }
+                    let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
+                    self.activities.append(contentsOf: activities)
+                    self.lastDocument = documents.last
+                    print("Activities from if: \(activities.count)")
+                })
+        } else {
+            db.collection("activity")
+                .order(by: "timestamp", descending: true)
+                .limit(to: 10)
+                .addSnapshotListener({ snapshot, _ in
+                    guard let documents = snapshot?.documents else { return }
+                    let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
+                    self.activities = activities
+                    self.lastDocument = documents.last
+                    print("Activities from else: \(self.activities.count)")
+                })
+        }
     }
 }
