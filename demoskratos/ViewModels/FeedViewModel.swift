@@ -24,7 +24,7 @@ class FeedViewModel: ObservableObject {
                     let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
                     self.activities.append(contentsOf: activities)
                     self.lastDocument = documents.last
-                    print("Activities from if: \(activities.count)")
+                    print("Call to database Feed View Model fetchActivity() in if: \(self.activities.count)")
                 })
         } else {
             db.collection("activity")
@@ -35,7 +35,7 @@ class FeedViewModel: ObservableObject {
                     let activities = documents.compactMap({ try? $0.data(as: Activity.self) })
                     self.activities = activities
                     self.lastDocument = documents.last
-                    print("Activities from else: \(self.activities.count)")
+                    print("Call to database Feed View Model fetchActivity() in else: \(self.activities.count)")
                 })
         }
     }

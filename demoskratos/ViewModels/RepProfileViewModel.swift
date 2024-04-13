@@ -22,6 +22,7 @@ class RepProfileViewModel: ObservableObject {
             guard let representative = try? snapshot.data(as: Representative.self) else { return }
             
             self.representative = representative
+            print("Call to database from rep profile view model fetchRepresentative()")
         }
     }
 }
