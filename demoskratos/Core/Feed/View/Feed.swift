@@ -20,7 +20,7 @@ struct Feed: View {
                     if activity == viewModel.activities.last {
                         ProgressView()
                             .onAppear {
-                                viewModel.fetchActivity()
+                                viewModel.fetchActivityWhenUserScrolls()
                             }
                     }
                 }
