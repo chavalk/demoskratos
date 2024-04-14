@@ -13,6 +13,11 @@ class FeedViewModel: ObservableObject {
     
     private var db = Firestore.firestore()
     
+    init() {
+        fetchActivity()
+        
+    }
+    
     func fetchActivity() {
         if let lastDocument {
             db.collection("activity")
