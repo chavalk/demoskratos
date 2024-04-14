@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
-				BEC974262A0FF96F00BFE62C /* Views */,
+				BEC974262A0FF96F00BFE62C /* Core */,
 				BEBF28C72A3018DE00390E90 /* ViewModels */,
 				BEC974322A1AE1D800BFE62C /* Models */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
@@ -217,14 +217,13 @@
 			isa = PBXGroup;
 			children = (
 				BEBF28C82A30196500390E90 /* AuthViewModel.swift */,
-				BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */,
 				BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */,
 				BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		BEC974262A0FF96F00BFE62C /* Views */ = {
+		BEC974262A0FF96F00BFE62C /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */,
@@ -238,15 +237,14 @@
 				BE3E3CD02B85782E008E9D3C /* Video */,
 				BEC9742F2A1ADF7900BFE62C /* Helpers */,
 			);
-			path = Views;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		BEC974272A0FF9A600BFE62C /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				BEC974282A0FFA5700BFE62C /* Feed.swift */,
-				BEC974242A0F1A0B00BFE62C /* FeedRow.swift */,
-				BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */,
+				BECD35F42BCC6D61006A6C0A /* View */,
+				BECD35F52BCC6D66006A6C0A /* ViewModel */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -282,6 +280,24 @@
 				BEA9ABDE2B04581D00AD5306 /* Activity.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BECD35F42BCC6D61006A6C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEC974282A0FFA5700BFE62C /* Feed.swift */,
+				BEC974242A0F1A0B00BFE62C /* FeedRow.swift */,
+				BEC9742A2A101F7300BFE62C /* FeedRowButtons.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BECD35F52BCC6D66006A6C0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
