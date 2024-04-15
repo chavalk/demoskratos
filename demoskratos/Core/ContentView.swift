@@ -25,21 +25,6 @@ struct ContentView: View {
                         .tabItem {
                             Label("Search", systemImage: "magnifyingglass")
                         }
-                    
-                    Meetings()
-                        .tabItem {
-                            Label("Meetings", systemImage: "video")
-                        }
-                    
-                    Candidates()
-                        .tabItem {
-                            Label("My Candidates", systemImage: "person.2")
-                        }
-                    
-                    Ballot()
-                        .tabItem {
-                            Label("My Ballot", systemImage: "doc.text")
-                        }
                 }
             }
         }
