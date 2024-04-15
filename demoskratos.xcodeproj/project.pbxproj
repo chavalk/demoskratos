@@ -113,9 +113,8 @@
 		BE694D292A2194AC00AA9D4C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */,
-				BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */,
-				BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */,
+				BECD35FC2BCCB65E006A6C0A /* View */,
+				BECD35FD2BCCB662006A6C0A /* ViewModel */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -123,8 +122,8 @@
 		BE7655BF2AD5F37200CFCD95 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				BE7655C02AD5F3B200CFCD95 /* Search.swift */,
-				BE013C4B2AE6164A0084216D /* RepresentativeCell.swift */,
+				BECD35FA2BCCB631006A6C0A /* View */,
+				BECD35FB2BCCB636006A6C0A /* ViewModel */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -148,9 +147,8 @@
 		BE9F5C5429F9C3BB00E57EDE /* demoskratos */ = {
 			isa = PBXGroup;
 			children = (
-				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
+				BECD35F92BCCB5FB006A6C0A /* App */,
 				BEC974262A0FF96F00BFE62C /* Core */,
-				BEBF28C72A3018DE00390E90 /* ViewModels */,
 				BEC974322A1AE1D800BFE62C /* Models */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
 				BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */,
@@ -177,23 +175,14 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		BEBF28C72A3018DE00390E90 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */,
-				BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */,
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		BEC974262A0FF96F00BFE62C /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */,
 				BEBA3BA82A2AF7D800CD1981 /* Authentication */,
 				BEC974272A0FF9A600BFE62C /* Feed */,
 				BE7655BF2AD5F37200CFCD95 /* Search */,
 				BE694D292A2194AC00AA9D4C /* Profile */,
+				BECD35F82BCCB5E3006A6C0A /* Root */,
 				BE3E3CD02B85782E008E9D3C /* Video */,
 				BEC9742F2A1ADF7900BFE62C /* Helpers */,
 			);
@@ -276,6 +265,57 @@
 			isa = PBXGroup;
 			children = (
 				BEBF28C82A30196500390E90 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BECD35F82BCCB5E3006A6C0A /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		BECD35F92BCCB5FB006A6C0A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		BECD35FA2BCCB631006A6C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE7655C02AD5F3B200CFCD95 /* Search.swift */,
+				BE013C4B2AE6164A0084216D /* RepresentativeCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BECD35FB2BCCB636006A6C0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BECD35FC2BCCB65E006A6C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */,
+				BEAC1B5E2A254E1C00C8FBB2 /* RecentVotesRow.swift */,
+				BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BECD35FD2BCCB662006A6C0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
