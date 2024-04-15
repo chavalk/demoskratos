@@ -204,11 +204,8 @@
 		BEBA3BA82A2AF7D800CD1981 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				BEFF09952A2B98E700A36FB3 /* Landing.swift */,
-				BEFF09972A2D903E00A36FB3 /* Registration.swift */,
-				BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */,
-				BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */,
-				BEBF28B22A2F80A700390E90 /* Login.swift */,
+				BECD35F62BCCAE44006A6C0A /* View */,
+				BECD35F72BCCAE4A006A6C0A /* ViewModel */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -216,7 +213,6 @@
 		BEBF28C72A3018DE00390E90 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				BEBF28C82A30196500390E90 /* AuthViewModel.swift */,
 				BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */,
 				BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */,
 			);
@@ -296,6 +292,26 @@
 			isa = PBXGroup;
 			children = (
 				BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		BECD35F62BCCAE44006A6C0A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEFF09952A2B98E700A36FB3 /* Landing.swift */,
+				BEBF28B22A2F80A700390E90 /* Login.swift */,
+				BEFF09972A2D903E00A36FB3 /* Registration.swift */,
+				BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */,
+				BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BECD35F72BCCAE4A006A6C0A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				BEBF28C82A30196500390E90 /* AuthViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
