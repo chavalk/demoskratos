@@ -12,7 +12,7 @@ struct Login: View {
     @State var password = ""
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var authentication: AuthViewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -39,7 +39,7 @@ struct Login: View {
                 }
                 
                 Button {
-                    authentication.signIn(withEmail: email, password: password)
+                    viewModel.signIn(withEmail: email, password: password)
                 } label: {
                     Text("Log in")
                         .foregroundColor(colorScheme == .dark ? .black : .white)
