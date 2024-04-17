@@ -17,8 +17,8 @@ struct Landing: View {
                 Spacer()
                 
                 VStack(alignment: .center, spacing: 25) {
-                    Text("Demoskratos")
-                        .font(.system(size: 60))
+                    Text("Demos Kratos")
+                        .font(.system(size: 55))
                         .fontWeight(.bold)
                     
                     Text("Stay up to date with your elected representatives.")

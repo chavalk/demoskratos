@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct Feed: View {
     @ObservedObject var viewModel = FeedViewModel()
@@ -27,6 +28,13 @@ struct Feed: View {
             }
             .navigationTitle("Floor Activity")
             .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        try? Auth.auth().signOut()
+                    } label: {
+                        Text("Log out")
+                    }
+                }
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         self.isShowingLiveView.toggle()
