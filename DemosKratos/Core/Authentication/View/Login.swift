@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct Login: View {
+    // MARK: User Details
     @State var email = ""
     @State var password = ""
+    // MARK: View Properties
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var viewModel: AuthViewModel
+    @State var isLoading: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -39,6 +42,8 @@ struct Login: View {
                 }
                 
                 Button {
+                    isLoading = true
+                    UIApplication.shared.self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
                     viewModel.signIn(withEmail: email, password: password)
                 } label: {
                     Text("Log in")
@@ -53,6 +58,9 @@ struct Login: View {
             }
         }
         .padding(.leading)
+        .overlay(content: {
+            LoadingView(show: $isLoading)
+        })
     }
 }
 
