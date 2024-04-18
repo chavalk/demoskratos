@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RegistrationCredentials: View {
+    // MARK: User Details
     let firstName: String
     let lastName: String
     let streetAddress: String
@@ -15,9 +16,10 @@ struct RegistrationCredentials: View {
     let state: String
     @State private var email = ""
     @State private var password = ""
+    // MARK: View Properties
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
-    @EnvironmentObject var authentication: AuthViewModel
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -44,7 +46,7 @@ struct RegistrationCredentials: View {
                 }
                 
                 Button {
-                    authentication.registerUser(withEmail: email, password: password, firstName: firstName, lastName: lastName, streetAddress: streetAddress, city: city, state: state)
+                    viewModel.registerUser(withEmail: email, password: password, firstName: firstName, lastName: lastName, streetAddress: streetAddress, city: city, state: state)
                 } label: {
                     Text("Sign up")
                         .foregroundColor(colorScheme == .dark ? .black : .white)
