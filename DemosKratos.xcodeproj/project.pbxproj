@@ -212,10 +212,10 @@
 			isa = PBXGroup;
 			children = (
 				BE694D2C2A22577600AA9D4C /* CircleImage.swift */,
-				BE4E13E32A1F1488005E2986 /* MapView.swift */,
 				BEFF09992A2EDA7400A36FB3 /* CustomInputField.swift */,
-				BEAE85362BA116F300B19B37 /* WebView.swift */,
 				BED522692BD02ED4001975A4 /* LoadingView.swift */,
+				BE4E13E32A1F1488005E2986 /* MapView.swift */,
+				BEAE85362BA116F300B19B37 /* WebView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
