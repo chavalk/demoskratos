@@ -37,9 +37,6 @@ struct RepresentativeCell: View {
                 
                 Spacer()
             }
-            .padding()
-            
-            Divider()
         }
     }
 }

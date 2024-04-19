@@ -14,8 +14,8 @@ struct Search: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
-                ForEach(viewModel.searchResults) { representative in
+            List {
+                ForEach(viewModel.representatives) { representative in
                     NavigationLink {
                         RepresentativeProfile(representative: representative)
                     } label: {
@@ -25,12 +25,16 @@ struct Search: View {
             }
             .navigationTitle("Search")
         }
+        .listStyle(.plain)
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always), prompt: "U.S. House Representatives")
-        .onChange(of: searchText, perform: { searchText in
-            viewModel.searchResults = viewModel.representatives.filter({ representative in
-                representative.name.lowercased().contains(searchText.lowercased())
-            })
-        })
+        .onSubmit(of: .search) {
+            viewModel.fetchRepresentatives(with: searchText)
+        }
+        .onChange(of: searchText) { newValue in
+            if newValue.isEmpty {
+                viewModel.representatives = []
+            }
+        }
     }
 }
 
