@@ -9,48 +9,33 @@ import SwiftUI
 import Firebase
 
 struct Feed: View {
-    @ObservedObject var viewModel = FeedViewModel()
     @State var isShowingLiveView = false
     
     var body: some View {
         NavigationStack {
-            List {
-                ForEach(viewModel.activities) { activity in
-                    FeedRow(activity: activity)
+            ReusableFeed()
+                .toolbar(content: {
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            try? Auth.auth().signOut()
+                        } label: {
+                            Text("Log out")
+                        }
+                    }
                     
-                    if activity == viewModel.activities.last {
-                        ProgressView()
-                            .onAppear {
-                                viewModel.fetchActivityWhenUserScrolls()
-                            }
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button {
+                            self.isShowingLiveView.toggle()
+                        } label: {
+                            Image(systemName: "play.circle.fill")
+                                .font(.system(size: 25))
+                        }
+                        .fullScreenCover(isPresented: $isShowingLiveView, content: {
+                            WatchLiveView()
+                        })
                     }
-                }
-            }
-            .navigationTitle("Floor Activity")
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        try? Auth.auth().signOut()
-                    } label: {
-                        Text("Log out")
-                    }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        self.isShowingLiveView.toggle()
-                    } label: {
-                        Image(systemName: "play.circle.fill")
-                            .font(.system(size: 25))
-                    }
-                    .fullScreenCover(isPresented: $isShowingLiveView, content: {
-                        WatchLiveView()
-                    })
-                }
-            }
-            .scrollIndicators(.hidden)
-            .refreshable {
-                viewModel.fetchActivity()
-            }
+                })
+                .navigationTitle("Activity")
         }
     }
 }

@@ -28,6 +28,8 @@ struct FeedRow: View {
             Text(activity.floorActivity)
                 .font(.system(size: 14))
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(.horizontal)
     }
 }
 
