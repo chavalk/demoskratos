@@ -11,6 +11,9 @@ import FirebaseFirestoreSwift
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
+    @Published var errorMessage: String = ""
+    @Published var showError: Bool = false
+    @Published var isLoading: Bool = false
     
     init() {
         userSession = Auth.auth().currentUser
@@ -19,6 +22,9 @@ class AuthViewModel: ObservableObject {
     func signIn(withEmail email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
+                self.errorMessage = error.localizedDescription
+                self.showError.toggle()
+                self.isLoading = false
                 print("DEBUG: Failed to sign in with error \(error.localizedDescription)")
                 return
             }
