@@ -12,21 +12,25 @@ struct FeedRow: View {
     let activity : Activity
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            HStack {
-                Image(systemName: "clock")
-                    .font(.system(size: 14))
-                
-                Text(activity.floorTime)
-                    .font(.system(size: 14))
-                
-                Text(activity.date)
-                    .font(.system(size: 12))
-                    .foregroundStyle(.secondary)
-            }
-            
-            Text(activity.floorActivity)
+        HStack(alignment: .top, spacing: 12) {
+            Image(systemName: "clock")
                 .font(.system(size: 14))
+            
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text(activity.floorTime)
+                        .font(.system(size: 14))
+                    
+                    Text(activity.date)
+                        .font(.system(size: 12))
+                        .foregroundStyle(.secondary)
+                }
+                
+                
+                
+                Text(activity.floorActivity)
+                    .font(.system(size: 14))
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
