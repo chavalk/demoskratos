@@ -37,6 +37,9 @@ class AuthViewModel: ObservableObject {
     func registerUser(withEmail email: String, password: String, firstName: String, lastName: String, streetAddress: String, city: String, state: String) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
+                self.errorMessage = error.localizedDescription
+                self.showError.toggle()
+                self.isLoading = false
                 print("DEBUG: Failed to sign up with error \(error.localizedDescription)")
                 return
             }

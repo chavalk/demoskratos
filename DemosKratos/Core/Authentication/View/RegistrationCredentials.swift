@@ -20,7 +20,6 @@ struct RegistrationCredentials: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
     @EnvironmentObject var viewModel: AuthViewModel
-    @State var isLoading: Bool = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 20) {
@@ -47,8 +46,8 @@ struct RegistrationCredentials: View {
                 }
                 
                 Button {
-                    isLoading = true
                     UIApplication.shared.self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    viewModel.isLoading = true
                     viewModel.registerUser(withEmail: email, password: password, firstName: firstName, lastName: lastName, streetAddress: streetAddress, city: city, state: state)
                 } label: {
                     Text("Sign up")
@@ -64,8 +63,9 @@ struct RegistrationCredentials: View {
         }
         .padding(.leading)
         .overlay {
-            LoadingView(show: $isLoading)
+            LoadingView(show: $viewModel.isLoading)
         }
+        .alert(viewModel.errorMessage, isPresented: $viewModel.showError, actions: {})
     }
 }
 
