@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BE013C4C2AE6164A0084216D /* RepresentativeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE013C4B2AE6164A0084216D /* RepresentativeCell.swift */; };
+		BE0CB67D2BDC57F800E4E417 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0CB67C2BDC57F800E4E417 /* ViewExtensions.swift */; };
 		BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */; };
 		BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */; };
 		BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1BB2A3EA7D8007811B7 /* Vote.swift */; };
@@ -52,6 +53,7 @@
 
 /* Begin PBXFileReference section */
 		BE013C4B2AE6164A0084216D /* RepresentativeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeCell.swift; sourceTree = "<group>"; };
+		BE0CB67C2BDC57F800E4E417 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewExtensions.swift; path = DemosKratos/Core/Helpers/ViewExtensions.swift; sourceTree = SOURCE_ROOT; };
 		BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeBio.swift; sourceTree = "<group>"; };
 		BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BE24F1BB2A3EA7D8007811B7 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				BED522692BD02ED4001975A4 /* LoadingView.swift */,
 				BE4E13E32A1F1488005E2986 /* MapView.swift */,
 				BEAE85362BA116F300B19B37 /* WebView.swift */,
+				BE0CB67C2BDC57F800E4E417 /* ViewExtensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				BEFF09982A2D903E00A36FB3 /* Registration.swift in Sources */,
 				BEA9ABDF2B04581D00AD5306 /* Activity.swift in Sources */,
 				BE8439F02A3D6DCD00258FBB /* Representative.swift in Sources */,
+				BE0CB67D2BDC57F800E4E417 /* ViewExtensions.swift in Sources */,
 				BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */,
 				BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */,
 				BEC974292A0FFA5700BFE62C /* Feed.swift in Sources */,
