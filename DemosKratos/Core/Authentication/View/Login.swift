@@ -41,7 +41,7 @@ struct Login: View {
                 }
                 
                 Button {
-                    UIApplication.shared.self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    closeKeyboard()
                     viewModel.isLoading = true
                     viewModel.signIn(withEmail: email, password: password)
                 } label: {

@@ -46,7 +46,7 @@ struct RegistrationCredentials: View {
                 }
                 
                 Button {
-                    UIApplication.shared.self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                    closeKeyboard()
                     viewModel.isLoading = true
                     viewModel.registerUser(withEmail: email, password: password, firstName: firstName, lastName: lastName, streetAddress: streetAddress, city: city, state: state)
                 } label: {

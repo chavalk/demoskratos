@@ -9,6 +9,11 @@ import SwiftUI
 
 // MARK: View extension for UI Building
 extension View {
+    // Closing all active keyboards
+    func closeKeyboard() {
+        UIApplication.shared.self.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+    
     // MARK: Disabling with opacity
     func disabledWithOpacity(_ condition: Bool) -> some View {
         self
