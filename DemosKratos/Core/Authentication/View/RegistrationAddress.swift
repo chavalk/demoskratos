@@ -17,7 +17,7 @@ struct RegistrationAddress: View {
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
+        VStack(alignment: .leading, spacing: 10) {
             Button {
                 dismiss()
             } label: {
@@ -34,7 +34,7 @@ struct RegistrationAddress: View {
             Spacer()
             
             VStack(spacing: 40) {
-                VStack(spacing: 56) {
+                VStack(spacing: 30) {
                     CustomInputField(text: $streetAddress, title: "Street Address", placeholder: "Enter your street address")
                     
                     CustomInputField(text: $city, title: "City", placeholder: "Enter your city")
