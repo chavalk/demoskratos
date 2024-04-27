@@ -49,6 +49,7 @@ struct Registration: View {
                         .background(colorScheme == .dark ? Color.white : Color.black)
                         .cornerRadius(25)
                 }
+                .disabledWithOpacity(firstName == "" || lastName == "")
                 
                 Spacer()
             }
