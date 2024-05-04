@@ -16,16 +16,17 @@ struct FeedRow: View {
             Image("us-house-tx-21")
                 .resizable()
                 .scaledToFill()
-                .frame(width: 56, height: 56)
+                .frame(width: 40, height: 40)
                 .clipShape(Circle())
             
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
                     Text("Chip Roy")
-                        .font(.headline)
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
                     
                     Text(activity.date)
-                        .font(.system(size: 12))
+                        .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
                 
