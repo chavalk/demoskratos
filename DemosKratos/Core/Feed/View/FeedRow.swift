@@ -13,23 +13,26 @@ struct FeedRow: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Image(systemName: "clock")
-                .font(.system(size: 14))
+            Image("us-house-tx-21")
+                .resizable()
+                .scaledToFill()
+                .frame(width: 56, height: 56)
+                .clipShape(Circle())
             
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
-                    Text(activity.floorTime)
-                        .font(.system(size: 14))
+                    Text("Chip Roy")
+                        .font(.headline)
                     
                     Text(activity.date)
                         .font(.system(size: 12))
                         .foregroundStyle(.secondary)
                 }
                 
-                
-                
                 Text(activity.floorActivity)
                     .font(.system(size: 14))
+                
+                FeedRowButtons()
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)

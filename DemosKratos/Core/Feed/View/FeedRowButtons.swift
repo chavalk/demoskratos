@@ -14,24 +14,18 @@ struct FeedRowButtons: View {
                 
             } label: {
                 Image(systemName: "hand.thumbsup")
-                    .font(.system(size: 20))
-                    .frame(width: 32, height: 32)
             }
 
             Button {
                 
             } label: {
                 Image(systemName: "hand.thumbsdown")
-                    .font(.system(size: 20))
-                    .frame(width: 32, height: 32)
             }
 
             Button {
                 
             } label: {
                 Image(systemName: "bubble.right")
-                    .font(.system(size: 20))
-                    .frame(width: 32, height: 32)
             }
         }
         .foregroundColor(Color(uiColor: .darkGray))
