@@ -18,12 +18,12 @@ struct ContentView: View {
                 TabView {
                     Feed()
                         .tabItem {
-                            Label("U.S. House", systemImage: "building.columns")
+                            Image(systemName: "house")
                         }
                     
                     Search()
                         .tabItem {
-                            Label("Search", systemImage: "magnifyingglass")
+                            Image(systemName: "magnifyingglass")
                         }
                 }
             }
