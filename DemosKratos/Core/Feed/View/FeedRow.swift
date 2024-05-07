@@ -13,7 +13,7 @@ struct FeedRow: View {
     
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
-            Image("us-house-tx-21")
+            Image("us-house-seal")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 40, height: 40)
@@ -21,11 +21,17 @@ struct FeedRow: View {
             
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
-                    Text("Chip Roy")
+                    Text("U.S. House of Representatives")
                         .font(.subheadline)
                         .fontWeight(.semibold)
-                    
+                }
+                
+                HStack {
                     Text(activity.date)
+                        .font(.caption2)
+                        .foregroundStyle(.secondary)
+                    
+                    Text(activity.floorTime)
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                 }
