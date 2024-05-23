@@ -29,6 +29,7 @@ struct FeedRowButtons: View {
             }
         }
         .foregroundColor(Color(uiColor: .darkGray))
+        .padding(.vertical, 8)
     }
 }
 

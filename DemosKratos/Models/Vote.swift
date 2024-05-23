@@ -8,13 +8,12 @@
 import Firebase
 
 struct Vote: Codable, Identifiable {
+    let billNumber: String
+    let billTitle: String
     let id: String
-    let bill: String
-    var billTitle: String
-    let noVotes: [String]
-    let notVoting: [String]
     let question: String
-    let time: String
-    let yesVotes: [String]
+    let repLastName: String
     let rollCallNumber: Int
+    let timestamp: Timestamp
+    let vote: String
 }

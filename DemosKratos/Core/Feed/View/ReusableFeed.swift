@@ -18,19 +18,19 @@ struct ReusableFeed: View {
                     ProgressView()
                         .padding(.top, 30)
                 } else {
-                    if viewModel.activities.isEmpty {
+                    if viewModel.votes.isEmpty {
                         // No activity found on Firestore
-                        Text("No Activity Found")
+                        Text("No Votes Found")
                             .font(.caption)
                             .foregroundStyle(.gray)
                             .padding(.top, 30)
                     } else {
-                        ForEach(viewModel.activities) { activity in
-                            FeedRow(activity: activity)
+                        ForEach(viewModel.votes) { vote in
+                            FeedRow(vote: vote)
                                 .onAppear {
                                     // When last activity appears, fetching new activity (If there)
-                                    if activity.id == viewModel.activities.last?.id && viewModel.paginationDoc != nil {
-                                        Task { await viewModel.fetchActivity() }
+                                    if vote.id == viewModel.votes.last?.id && viewModel.paginationDoc != nil {
+                                        Task { await viewModel.fetchVotes() }
                                     }
                                 }
                             
@@ -43,15 +43,15 @@ struct ReusableFeed: View {
         .refreshable {
             // Pull to refresh
             viewModel.isFetching = true
-            viewModel.activities = []
+            viewModel.votes = []
             // Resetting pagination doc
             viewModel.paginationDoc = nil
-            await viewModel.fetchActivity()
+            await viewModel.fetchVotes()
         }
         .task {
             // Fetching for one time
-            guard viewModel.activities.isEmpty else { return }
-            await viewModel.fetchActivity()
+            guard viewModel.votes.isEmpty else { return }
+            await viewModel.fetchVotes()
         }
     }
 }
