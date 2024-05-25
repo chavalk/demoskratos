@@ -19,14 +19,16 @@ class FeedViewModel: ObservableObject {
             
             // Implement pagination
             if let paginationDoc {
-                query = Firestore.firestore().collection("votes")
-                    .whereField("repLastName", isEqualTo: "Roy")
+                query = Firestore.firestore().collection("representatives")
+                    .document("Roy")
+                    .collection("votes")
                     .order(by: "timestamp", descending: true)
                     .start(afterDocument: paginationDoc)
                     .limit(to: 10)
             } else {
-                query = Firestore.firestore().collection("votes")
-                    .whereField("repLastName", isEqualTo: "Roy")
+                query = Firestore.firestore().collection("representatives")
+                    .document("Roy")
+                    .collection("votes")
                     .order(by: "timestamp", descending: true)
                     .limit(to: 10)
             }
