@@ -35,7 +35,7 @@ struct Feed: View {
                         })
                     }
                 })
-                .navigationTitle("Activity")
+                .navigationTitle("My Reps")
         }
     }
 }
