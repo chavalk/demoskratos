@@ -19,31 +19,20 @@ struct FeedRow: View {
                 .frame(width: 40, height: 40)
                 .clipShape(Circle())
             
-            VStack(alignment: .leading, spacing: 6) {
-                HStack {
-                    Text("Chip Roy")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                }
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Chip Roy")
+                    .font(.subheadline)
+                    .fontWeight(.semibold)
                 
-                HStack {
-                    Text(vote.id)
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                    
-                    Text("")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
-                
-                Text("Your U.S. House Representative voted \(vote.vote) \(vote.question). \(vote.billNumber): \(vote.billTitle).")
-                    .font(.system(size: 14))
+                Text("Voted \(vote.vote) \(vote.question) of \(vote.billNumber): \(vote.billTitle).")
+                    .font(.subheadline)
                 
                 FeedRowButtons()
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal)
+        .padding(.top, 5)
     }
 }
 
