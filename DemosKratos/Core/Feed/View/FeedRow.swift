@@ -9,7 +9,7 @@ import SwiftUI
 import Firebase
 
 struct FeedRow: View {
-    let vote: Vote
+    let representative: Representative
     
     var body: some View {
         HStack(alignment: .top, spacing: 12) {
@@ -20,19 +20,16 @@ struct FeedRow: View {
                 .clipShape(Circle())
             
             VStack(alignment: .leading, spacing: 5) {
-                Text("Chip Roy")
+                Text(representative.name)
                     .font(.subheadline)
                     .fontWeight(.semibold)
                 
-                Text("Voted \(vote.vote) \(vote.question) of \(vote.billNumber): \(vote.billTitle).")
+                Text(representative.officeName)
                     .font(.subheadline)
-                
-                FeedRowButtons()
+                    .foregroundStyle(.secondary)
             }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
-        .padding(.horizontal)
-        .padding(.top, 5)
     }
 }
 

@@ -8,37 +8,17 @@
 import Firebase
 
 class FeedViewModel: ObservableObject {
-    @Published var votes = [Vote]()
     @Published var isFetching: Bool = true
-    @Published var paginationDoc: QueryDocumentSnapshot?
+    @Published var representative: Representative?
     
     @MainActor
-    func fetchVotes() async {
+    func fetchRepresentative() async {
         do {
-            var query: Query!
-            
-            // Implement pagination
-            if let paginationDoc {
-                query = Firestore.firestore().collection("representatives")
-                    .document("Roy")
-                    .collection("votes")
-                    .order(by: "timestamp", descending: true)
-                    .start(afterDocument: paginationDoc)
-                    .limit(to: 10)
-            } else {
-                query = Firestore.firestore().collection("representatives")
-                    .document("Roy")
-                    .collection("votes")
-                    .order(by: "timestamp", descending: true)
-                    .limit(to: 10)
-            }
-            
-            let docs = try await query.getDocuments()
-            let fetchedVotes = docs.documents.compactMap({ try? $0.data(as: Vote.self) })
-            votes.append(contentsOf: fetchedVotes)
-            paginationDoc = docs.documents.last
+            let doc = try await Firestore.firestore().collection("representatives").document("Roy").getDocument()
+            let fetchedRepresentative = try? doc.data(as: Representative.self)
+            representative = fetchedRepresentative
             isFetching = false
-            print("Call to database Feed View Model fetchVotes(): \(self.votes.count)")
+            print("Call to database Feed View Model fetchRepresentative()")
         } catch {
             print(error.localizedDescription)
         }
