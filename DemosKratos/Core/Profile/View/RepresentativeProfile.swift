@@ -70,7 +70,7 @@ struct RepresentativeProfile: View {
                         .foregroundColor(colorScheme == .dark ? .white : .black)
                         .background(
                             Circle()
-                                .fill(Color.white)
+                                .fill(Color(UIColor.systemBackground))
                                 .frame(width:40, height: 40)
                         )
                 }
