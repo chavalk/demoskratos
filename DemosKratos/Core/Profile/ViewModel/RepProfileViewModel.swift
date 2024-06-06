@@ -8,21 +8,39 @@
 import Firebase
 
 class RepProfileViewModel: ObservableObject {
-    @Published var representative: Representative?
+    @Published var votes = [Vote]()
+    @Published var isFetching: Bool = true
+    @Published var paginationDoc: QueryDocumentSnapshot?
     
-    init() {
-        fetchRepresentative()
-    }
-    
-    func fetchRepresentative() {
-        let uid = "Qzqjtk1sa2IJcbwPQ1PG"
-        Firestore.firestore().collection("representatives").document(uid).getDocument { snapshot, _ in
-            guard let snapshot = snapshot else { return }
+    @MainActor
+    func fetchVotes() async {
+        do {
+            var query: Query!
             
-            guard let representative = try? snapshot.data(as: Representative.self) else { return }
+            // Implement pagination
+            if let paginationDoc {
+                query = Firestore.firestore().collection("representatives")
+                    .document("Roy")
+                    .collection("votes")
+                    .order(by: "timestamp", descending: true)
+                    .start(afterDocument: paginationDoc)
+                    .limit(to: 10)
+            } else {
+                query = Firestore.firestore().collection("representatives")
+                    .document("Roy")
+                    .collection("votes")
+                    .order(by: "timestamp", descending: true)
+                    .limit(to: 10)
+            }
             
-            self.representative = representative
-            print("Call to database from rep profile view model fetchRepresentative()")
+            let docs = try await query.getDocuments()
+            let fetchedVotes = docs.documents.compactMap({ try? $0.data(as: Vote.self) })
+            votes.append(contentsOf: fetchedVotes)
+            paginationDoc = docs.documents.last
+            isFetching = false
+            print("Call to database Rep Profile View Model fetchVotes(): \(self.votes.count)")
+        } catch {
+            print(error.localizedDescription)
         }
     }
 }

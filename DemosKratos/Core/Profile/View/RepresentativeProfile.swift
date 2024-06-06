@@ -10,6 +10,7 @@ import SwiftUI
 struct RepresentativeProfile: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.colorScheme) var colorScheme
+    @ObservedObject var viewModel = RepProfileViewModel()
     private let representative: Representative
     
     init(representative: Representative) {
@@ -53,9 +54,30 @@ struct RepresentativeProfile: View {
             }
             .padding(.leading)
             
-            RecentVotesRow()
-            RecentVotesRow()
-            RecentVotesRow()
+            LazyVStack {
+                if viewModel.isFetching {
+                    ProgressView()
+                        .padding(.top, 30)
+                } else {
+                    if viewModel.votes.isEmpty {
+                        // No votes found on Firestore
+                        Text("No Votes Found")
+                            .font(.caption)
+                            .foregroundStyle(.gray)
+                            .padding(.top, 30)
+                    } else {
+                        ForEach(viewModel.votes) { vote in
+                            RecentVotesRow(vote: vote)
+                                .onAppear {
+                                    // When last activity appears, fetching new activity (If there)
+                                    if vote.id == viewModel.votes.last?.id && viewModel.paginationDoc != nil {
+                                        Task { await viewModel.fetchVotes() }
+                                    }
+                                }
+                        }
+                    }
+                }
+            }
         }
         .ignoresSafeArea(edges: .top)
         .navigationBarBackButtonHidden(true)
@@ -75,6 +97,19 @@ struct RepresentativeProfile: View {
                         )
                 }
             }
+        }
+        .refreshable {
+            // Pull to refresh
+            viewModel.isFetching = true
+            viewModel.votes = []
+            // Resetting pagination doc
+            viewModel.paginationDoc = nil
+            await viewModel.fetchVotes()
+        }
+        .task {
+            // Fetching for one time
+            guard viewModel.votes.isEmpty else { return }
+            await viewModel.fetchVotes()
         }
     }
 }

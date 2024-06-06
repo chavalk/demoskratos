@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecentVotesRow: View {
+    let vote: Vote
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack(alignment: .top) {
@@ -46,8 +48,8 @@ struct RecentVotesRow: View {
     }
 }
 
-struct RecentVotesRow_Previews: PreviewProvider {
-    static var previews: some View {
-        RecentVotesRow()
-    }
-}
+//struct RecentVotesRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        RecentVotesRow()
+//    }
+//}
