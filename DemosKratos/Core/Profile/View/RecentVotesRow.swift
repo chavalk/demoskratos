@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecentVotesRow: View {
     let vote: Vote
+    let representative: Representative
     
     var body: some View {
         VStack(alignment: .leading) {

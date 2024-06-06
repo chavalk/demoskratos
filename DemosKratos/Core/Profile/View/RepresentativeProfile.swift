@@ -67,7 +67,7 @@ struct RepresentativeProfile: View {
                             .padding(.top, 30)
                     } else {
                         ForEach(viewModel.votes) { vote in
-                            RecentVotesRow(vote: vote)
+                            RecentVotesRow(vote: vote, representative: representative)
                                 .onAppear {
                                     // When last activity appears, fetching new activity (If there)
                                     if vote.id == viewModel.votes.last?.id && viewModel.paginationDoc != nil {
