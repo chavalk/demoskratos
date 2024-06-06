@@ -21,21 +21,21 @@ struct RecentVotesRow: View {
                     .frame(width: 56, height: 56)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text("Chip Roy")
+                    Text(representative.name)
                         .font(.headline)
                     
                     Text("Voted ")
                     
-                    + Text("No ")
+                    + Text("\(vote.vote) ")
                         .bold()
                         .foregroundColor(.red)
                     
-                    + Text("on agreeing to ")
+                    + Text("\(vote.question) ")
                     
-                    + Text("House Resolution No. 463 ")
+                    + Text("\(vote.billNumber) ")
                         .bold()
                     
-                    + Text("providing for consideration of the bill (H.R. 277) REINS Act; providing for consideration of the bill (H.R. 288) Separation of Powers Restoration Act; providing for consideration of the bill (H.R. 1615) Gas Stove Protection and Freedom Act; and providing for consideration of the bill (H.R. 1640) Save Our Stoves Act.")
+                    + Text("\(vote.billTitle).")
                     
                     FeedRowButtons()
                 }
