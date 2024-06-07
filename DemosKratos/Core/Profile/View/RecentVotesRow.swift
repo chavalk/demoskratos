@@ -32,7 +32,7 @@ struct RecentVotesRow: View {
                     
                     + Text("\(vote.question) ")
                     
-                    + Text("\(vote.billNumber) ")
+                    + Text("\(vote.bill) ")
                         .bold()
                     
                     + Text("\(vote.billTitle).")
