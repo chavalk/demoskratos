@@ -8,8 +8,9 @@
 import Firebase
 
 struct Vote: Codable, Identifiable {
-    let billNumber: String
+    let bill: String
     let billTitle: String
+    let billURL: String
     let id: String
     let question: String
     let repLastName: String
