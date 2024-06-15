@@ -28,7 +28,7 @@ struct RecentVotesRow: View {
                     
                     + Text("\(vote.vote) ")
                         .bold()
-                        .foregroundColor(.red)
+                        .foregroundColor(vote.vote == "Yes" ? .green : .red)
                     
                     + Text("\(vote.question) ")
                     
