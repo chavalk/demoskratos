@@ -25,16 +25,12 @@ struct RecentVotesRow: View {
                         .font(.headline)
                     
                     Text("Voted ")
-                    
                     + Text("\(vote.vote) ")
                         .bold()
                         .foregroundColor(vote.vote == "Yes" ? .green : .red)
-                    
                     + Text("\(vote.question) ")
-                    
                     + Text("\(vote.bill) ")
                         .bold()
-                    
                     + Text("\(vote.billTitle).")
                     
                     FeedRowButtons()
