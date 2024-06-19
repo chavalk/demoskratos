@@ -29,9 +29,8 @@ struct RecentVotesRow: View {
                         .bold()
                         .foregroundColor(vote.vote == "Yes" ? .green : .red)
                     + Text("\(vote.question) ")
-                    + Text("\(vote.bill) ")
-                        .bold()
-                    + Text("\(vote.billTitle).")
+                    + Text(makeAttributedString())
+                    + Text(" \(vote.billTitle).")
                     
                     FeedRowButtons()
                 }
@@ -42,6 +41,13 @@ struct RecentVotesRow: View {
             Divider()
         }
         .padding(.horizontal)
+    }
+    
+    func makeAttributedString() -> AttributedString {
+        var attributedString = AttributedString(vote.bill)
+        attributedString.link = URL(string: vote.billURL)
+        attributedString.foregroundColor = .blue
+        return attributedString
     }
 }
 
