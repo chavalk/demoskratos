@@ -12,5 +12,6 @@ struct User: Codable {
     let firstName: String
     let lastName: String
     let uid: String
+    let usHouseRepresentativeLastName: String
     let usHouseRepresentativeName: String
 }
