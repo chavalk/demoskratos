@@ -67,7 +67,7 @@ class AuthViewModel: ObservableObject {
                     let officials = try JSONDecoder().decode(OfficialsResponse.self, from: data)
                     guard let usHouseRepresentativeName = officials.officials[4].name else { return }
                     let nameComponents = usHouseRepresentativeName.components(separatedBy: " ")
-                    let usHouseRepresentativeLastName = nameComponents.last
+                    guard let usHouseRepresentativeLastName = nameComponents.last else { return }
                     let user = User(
                         email: email,
                         firstName: firstName,

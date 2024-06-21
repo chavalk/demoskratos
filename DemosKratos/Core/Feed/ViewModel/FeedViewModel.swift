@@ -15,8 +15,9 @@ class FeedViewModel: ObservableObject {
     @MainActor
     func fetchRepresentative() async {
         do {
-            fetchCurrentUser()
-            let doc = try await Firestore.firestore().collection("representatives").document("Roy").getDocument()
+            await fetchCurrentUser()
+            guard let usHouseRepresentativeLastName = currentUser?.usHouseRepresentativeLastName else { return }
+            let doc = try await Firestore.firestore().collection("representatives").document(usHouseRepresentativeLastName).getDocument()
             let fetchedRepresentative = try? doc.data(as: Representative.self)
             representative = fetchedRepresentative
             isFetching = false
@@ -27,11 +28,15 @@ class FeedViewModel: ObservableObject {
     }
     
     @MainActor
-    func fetchCurrentUser() async throws {
-        guard let uid = Auth.auth().currentUser?.uid else { return }
-        let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
-        let user = try snapshot.data(as: User.self)
-        self.currentUser = user
-        print("Call to database Feed View Model fetchCurrentUser()")
+    func fetchCurrentUser() async {
+        do {
+            guard let uid = Auth.auth().currentUser?.uid else { return }
+            let snapshot = try await Firestore.firestore().collection("users").document(uid).getDocument()
+            let user = try snapshot.data(as: User.self)
+            self.currentUser = user
+            print("Call to database Feed View Model fetchCurrentUser()")
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
