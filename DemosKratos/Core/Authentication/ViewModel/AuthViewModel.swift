@@ -68,7 +68,7 @@ class AuthViewModel: ObservableObject {
                     guard let usHouseRepresentativeName = officials.officials[4].name else { return }
                     let nameComponents = usHouseRepresentativeName.components(separatedBy: " ")
                     let usHouseRepresentativeLastName = nameComponents.last
-                    let user = User(firstName: firstName, lastName: lastName, email: email, usHouseRepresentativeName: usHouseRepresentativeName, uid: firebaseUser.uid)
+                    let user = User(email: email, firstName: firstName, lastName: lastName, uid: firebaseUser.uid, usHouseRepresentativeName: usHouseRepresentativeName)
                     guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
                     
                     Firestore.firestore().collection("users").document(firebaseUser.uid).setData(encodedUser)
