@@ -21,8 +21,14 @@ struct RecentVotesRow: View {
                     .frame(width: 56, height: 56)
                 
                 VStack(alignment: .leading, spacing: 5) {
-                    Text(representative.name)
-                        .font(.headline)
+                    HStack {
+                        Text(representative.name)
+                            .font(.headline)
+                        
+                        Text(vote.timestamp.timestampString())
+                            .font(.subheadline)
+                            .foregroundStyle(.secondary)
+                    }
                     
                     Text("Voted ")
                     + Text("\(vote.vote) ")
