@@ -10,6 +10,7 @@ import Firebase
 
 struct Feed: View {
     @State var isShowingLiveView = false
+    @EnvironmentObject var viewModel: AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -17,7 +18,7 @@ struct Feed: View {
                 .toolbar(content: {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
-                            try? Auth.auth().signOut()
+                            viewModel.signOut()
                         } label: {
                             Text("Log out")
                         }
