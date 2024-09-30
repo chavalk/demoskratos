@@ -72,7 +72,7 @@
 		BE8439EF2A3D6DCD00258FBB /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 		BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepProfileViewModel.swift; sourceTree = "<group>"; };
-		BE9F5C5229F9C3BB00E57EDE /* DemosKratos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemosKratos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE9F5C5229F9C3BB00E57EDE /* Demoskratos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demoskratos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoskratosApp.swift; sourceTree = "<group>"; };
 		BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,7 +147,7 @@
 		BE9F5C5329F9C3BB00E57EDE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE9F5C5229F9C3BB00E57EDE /* DemosKratos.app */,
+				BE9F5C5229F9C3BB00E57EDE /* Demoskratos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -363,7 +363,7 @@
 				BEBF28C52A2FD3EE00390E90 /* FirebaseStorage */,
 			);
 			productName = demoskratos;
-			productReference = BE9F5C5229F9C3BB00E57EDE /* DemosKratos.app */;
+			productReference = BE9F5C5229F9C3BB00E57EDE /* Demoskratos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -381,7 +381,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BE9F5C4D29F9C3BB00E57EDE /* Build configuration list for PBXProject "DemosKratos" */;
+			buildConfigurationList = BE9F5C4D29F9C3BB00E57EDE /* Build configuration list for PBXProject "Demoskratos" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -592,7 +592,7 @@
 				DEVELOPMENT_TEAM = 324Y82FCZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Demos Kratos";
+				INFOPLIST_KEY_CFBundleDisplayName = Demoskratos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -604,7 +604,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.Demoskratos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Demoskratos;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -624,7 +624,7 @@
 				DEVELOPMENT_TEAM = 324Y82FCZ3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Demos Kratos";
+				INFOPLIST_KEY_CFBundleDisplayName = Demoskratos;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -636,7 +636,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.josegarcia.Demoskratos;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Demoskratos;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -647,7 +647,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BE9F5C4D29F9C3BB00E57EDE /* Build configuration list for PBXProject "DemosKratos" */ = {
+		BE9F5C4D29F9C3BB00E57EDE /* Build configuration list for PBXProject "Demoskratos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BE9F5C5E29F9C3BD00E57EDE /* Debug */,
