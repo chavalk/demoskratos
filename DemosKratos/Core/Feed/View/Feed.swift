@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct Feed: View {
     @State var isShowingLiveView = false
