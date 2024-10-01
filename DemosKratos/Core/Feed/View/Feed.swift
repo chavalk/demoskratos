@@ -17,6 +17,7 @@ struct Feed: View {
                 .toolbar(content: {
                     ToolbarItem(placement: .topBarLeading) {
                         Button {
+                            viewModel.isLoading = true
                             viewModel.signOut()
                         } label: {
                             Text("Log out")
@@ -36,6 +37,9 @@ struct Feed: View {
                     }
                 })
                 .navigationTitle("My Reps")
+                .overlay(content: {
+                    LoadingView(show: $viewModel.isLoading)
+                })
         }
     }
 }

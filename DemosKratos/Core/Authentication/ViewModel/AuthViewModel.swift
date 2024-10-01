@@ -95,6 +95,7 @@ class AuthViewModel: ObservableObject {
         do {
             try Auth.auth().signOut()
             self.userSession = nil
+            self.isLoading = false
         } catch let error {
             print("DEBUG: Failed to sign out with error: \(error.localizedDescription)")
         }
