@@ -30,6 +30,7 @@ class AuthViewModel: ObservableObject {
             }
             
             self.userSession = result?.user
+            self.isLoading = false
             print("Call to database from auth view model signIn()")
         }
     }
@@ -85,6 +86,7 @@ class AuthViewModel: ObservableObject {
             }
             
             task.resume()
+            self.isLoading = false
             print("Call to database from auth view model registerUser()")
         }
     }
