@@ -59,7 +59,15 @@ class AuthViewModel: ObservableObject {
                 formattedCity += substring + "%20"
             }
 
-            guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCn52jw43C-DqjxG7qowS3n2-vvaMlSvcU&address=\(formattedStreetAddress)\(formattedCity)\(state)") else { return }
+            var apiKey: String?
+            if let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist"),
+               let dict = NSDictionary(contentsOfFile: path),
+               let apiKeyValue = dict["API_KEY_CIVIC"] as? String {
+                apiKey = apiKeyValue
+            }
+            guard let apiKeyCivic = apiKey else { return }
+            
+            guard let url = URL(string: "https://www.googleapis.com/civicinfo/v2/representatives?key=\(apiKeyCivic)&address=\(formattedStreetAddress)\(formattedCity)\(state)") else { return }
             
             let task = URLSession.shared.dataTask(with: URLRequest(url: url)) { data, _, error in
                 guard let data = data, error == nil else { return }
