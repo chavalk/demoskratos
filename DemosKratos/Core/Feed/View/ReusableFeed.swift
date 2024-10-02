@@ -19,8 +19,8 @@ struct ReusableFeed: View {
                         .padding(.top, 30)
                 } else {
                     if viewModel.representative == nil {
-                        // No activity found on Firestore
-                        Text("No Votes Found")
+                        // No representatives found in database
+                        Text("No Representatives Found")
                             .font(.caption)
                             .foregroundStyle(.gray)
                             .padding(.top, 30)
