@@ -15,7 +15,7 @@ struct Feed: View {
         NavigationStack {
             ReusableFeed()
                 .toolbar(content: {
-                    ToolbarItem(placement: .topBarLeading) {
+                    ToolbarItem(placement: .topBarTrailing) {
                         Button {
                             viewModel.isLoading = true
                             viewModel.signOut()
