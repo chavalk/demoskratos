@@ -12,19 +12,18 @@
 		BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */; };
 		BE24F1BA2A3E9D92007811B7 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */; };
 		BE24F1BC2A3EA7D8007811B7 /* Vote.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24F1BB2A3EA7D8007811B7 /* Vote.swift */; };
-		BE3E3CD22B857859008E9D3C /* WatchLiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */; };
 		BE4141732AAEADFA00B51850 /* RegistrationAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */; };
 		BE4141752AB15F6D00B51850 /* RegistrationCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */; };
 		BE4141772AB5446400B51850 /* Official.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4141762AB5446400B51850 /* Official.swift */; };
 		BE494E1B2AF7EC3C00D315CE /* Votes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE494E1A2AF7EC3B00D315CE /* Votes.swift */; };
 		BE4E13E42A1F1488005E2986 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4E13E32A1F1488005E2986 /* MapView.swift */; };
+		BE51F46B2CF8D723000F1455 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE51F46A2CF8D723000F1455 /* GoogleService-Info.plist */; };
 		BE55AC192A3247FF00682547 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE55AC182A3247FF00682547 /* User.swift */; };
 		BE5F19EA2AE3653E009ABBF1 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */; };
 		BE694D2B2A2195C500AA9D4C /* RepresentativeProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */; };
 		BE694D2D2A22577600AA9D4C /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE694D2C2A22577600AA9D4C /* CircleImage.swift */; };
 		BE7655C12AD5F3B200CFCD95 /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7655C02AD5F3B200CFCD95 /* Search.swift */; };
 		BE8439F02A3D6DCD00258FBB /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE8439EF2A3D6DCD00258FBB /* Representative.swift */; };
-		BE850EA52B2EC4F600CB63E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */; };
 		BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */; };
 		BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */; };
 		BE9F5C5829F9C3BB00E57EDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE9F5C5729F9C3BB00E57EDE /* ContentView.swift */; };
@@ -58,19 +57,18 @@
 		BE1B27962ADB448100ACE9E0 /* RepresentativeBio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeBio.swift; sourceTree = "<group>"; };
 		BE24F1B92A3E9D92007811B7 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
 		BE24F1BB2A3EA7D8007811B7 /* Vote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vote.swift; sourceTree = "<group>"; };
-		BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchLiveView.swift; sourceTree = "<group>"; };
 		BE4141722AAEADFA00B51850 /* RegistrationAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationAddress.swift; sourceTree = "<group>"; };
 		BE4141742AB15F6D00B51850 /* RegistrationCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationCredentials.swift; sourceTree = "<group>"; };
 		BE4141762AB5446400B51850 /* Official.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Official.swift; sourceTree = "<group>"; };
 		BE494E1A2AF7EC3B00D315CE /* Votes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Votes.swift; sourceTree = "<group>"; };
 		BE4E13E32A1F1488005E2986 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		BE51F46A2CF8D723000F1455 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE55AC182A3247FF00682547 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BE5F19E92AE3653E009ABBF1 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		BE694D2A2A2195C500AA9D4C /* RepresentativeProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeProfile.swift; sourceTree = "<group>"; };
 		BE694D2C2A22577600AA9D4C /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		BE7655C02AD5F3B200CFCD95 /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		BE8439EF2A3D6DCD00258FBB /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
-		BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BE92841C2A40EA9E00E0CFD5 /* RepProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepProfileViewModel.swift; sourceTree = "<group>"; };
 		BE9F5C5229F9C3BB00E57EDE /* Demoskratos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demoskratos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9F5C5529F9C3BB00E57EDE /* demoskratosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demoskratosApp.swift; sourceTree = "<group>"; };
@@ -110,14 +108,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BE3E3CD02B85782E008E9D3C /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				BE3E3CD12B857859008E9D3C /* WatchLiveView.swift */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
 		BE694D292A2194AC00AA9D4C /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +150,7 @@
 				BECCCADF2C2D469A00A23D96 /* Extensions */,
 				BEC974322A1AE1D800BFE62C /* Models */,
 				BEC9742C2A1AB44500BFE62C /* Resources */,
-				BE850EA42B2EC4F600CB63E8 /* GoogleService-Info.plist */,
+				BE51F46A2CF8D723000F1455 /* GoogleService-Info.plist */,
 				BE9F5C5929F9C3BD00E57EDE /* Assets.xcassets */,
 				BE9F5C5B29F9C3BD00E57EDE /* Preview Content */,
 			);
@@ -192,7 +182,6 @@
 				BE7655BF2AD5F37200CFCD95 /* Search */,
 				BE694D292A2194AC00AA9D4C /* Profile */,
 				BECD35F82BCCB5E3006A6C0A /* Root */,
-				BE3E3CD02B85782E008E9D3C /* Video */,
 				BEC9742F2A1ADF7900BFE62C /* Helpers */,
 			);
 			path = Core;
@@ -408,7 +397,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE9F5C5D29F9C3BD00E57EDE /* Preview Assets.xcassets in Resources */,
-				BE850EA52B2EC4F600CB63E8 /* GoogleService-Info.plist in Resources */,
+				BE51F46B2CF8D723000F1455 /* GoogleService-Info.plist in Resources */,
 				BE9F5C5A29F9C3BD00E57EDE /* Assets.xcassets in Resources */,
 				BEC9742E2A1AB4A900BFE62C /* map.json in Resources */,
 			);
@@ -445,7 +434,6 @@
 				BECCCAE12C2D46C400A23D96 /* Timestamp.swift in Sources */,
 				BE92841D2A40EA9E00E0CFD5 /* RepProfileViewModel.swift in Sources */,
 				BE5F19EA2AE3653E009ABBF1 /* SearchViewModel.swift in Sources */,
-				BE3E3CD22B857859008E9D3C /* WatchLiveView.swift in Sources */,
 				BE9F5C5629F9C3BB00E57EDE /* demoskratosApp.swift in Sources */,
 				BEC974252A0F1A0B00BFE62C /* FeedRow.swift in Sources */,
 				BE1B27972ADB448100ACE9E0 /* RepresentativeBio.swift in Sources */,

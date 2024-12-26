@@ -23,18 +23,6 @@ struct Feed: View {
                             Text("Log out")
                         }
                     }
-                    
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            self.isShowingLiveView.toggle()
-                        } label: {
-                            Image(systemName: "play.circle.fill")
-                                .font(.system(size: 25))
-                        }
-                        .fullScreenCover(isPresented: $isShowingLiveView, content: {
-                            WatchLiveView()
-                        })
-                    }
                 })
                 .navigationTitle("My Reps")
                 .overlay(content: {
