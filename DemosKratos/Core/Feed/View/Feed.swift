@@ -14,16 +14,6 @@ struct Feed: View {
     var body: some View {
         NavigationStack {
             ReusableFeed()
-                .toolbar(content: {
-                    ToolbarItem(placement: .topBarTrailing) {
-                        Button {
-                            viewModel.isLoading = true
-                            viewModel.signOut()
-                        } label: {
-                            Text("Log out")
-                        }
-                    }
-                })
                 .navigationTitle("My Reps")
                 .overlay(content: {
                     LoadingView(show: $viewModel.isLoading)

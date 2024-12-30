@@ -25,6 +25,10 @@ struct ContentView: View {
                         .tabItem {
                             Image(systemName: "magnifyingglass")
                         }
+                    Profile()
+                        .tabItem {
+                            Image(systemName: "person.crop.circle.fill")
+                        }
                 }
             }
         }
