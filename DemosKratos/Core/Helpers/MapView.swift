@@ -14,7 +14,7 @@ struct MapView: UIViewRepresentable {
     
     func makeUIView(context: Context) -> some UIView {
         let region = MKCoordinateRegion(
-            center: CLLocationCoordinate2D(latitude: 29.97046, longitude: -98.90400),
+            center: CLLocationCoordinate2D(latitude: 29.82000, longitude: -98.90400),
             span: MKCoordinateSpan(latitudeDelta: 2.10, longitudeDelta: 0.26))
         mapView.setRegion(region, animated: true)
         mapView.delegate = context.coordinator
