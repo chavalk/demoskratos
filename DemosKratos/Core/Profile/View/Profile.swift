@@ -24,6 +24,9 @@ struct Profile: View {
                     }
                 })
                 .navigationTitle("Profile")
+                .overlay(content: {
+                    LoadingView(show: $viewModel.isLoading)
+                })
         }
     }
 }
